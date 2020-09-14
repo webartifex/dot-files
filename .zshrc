@@ -62,7 +62,7 @@ setopt NO_BEEP
 setopt NOTIFY
 
 # Initialize oh-my-zhs.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/repos/ohmyzsh"
 source "$ZSH/oh-my-zsh.sh"
 
 # Remove all "built-in" aliases.
