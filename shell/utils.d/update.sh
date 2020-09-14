@@ -91,9 +91,6 @@ update-system() {
     echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating zsh\033[0m\n'
     update-zsh
 
-    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating dot files\033[0m\n'
-    update-dot-files()
-
     sudo updatedb -U /
     echo
 
