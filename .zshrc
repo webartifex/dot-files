@@ -32,6 +32,8 @@ plugins=(
 DISABLE_AUTO_UPDATE="true"
 DISABLE_UPDATE_PROMPT="true"
 
+ZSH_COMPDUMP="$HOME/.cache/.zcompdump-$HOST-$ZSH_VERSION"
+
 # Make dotenv source .env files silently.
 ZSH_DOTENV_PROMPT=false
 
@@ -73,7 +75,7 @@ unalias -a
 # history
 # =======
 
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="$HOME/.cache/.zsh_history"
 HISTSIZE=99999
 SAVEHIST=99999
 

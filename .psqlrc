@@ -1,0 +1,1 @@
+\set HISTFILE ~/.cache/.psql_history- :DBNAME

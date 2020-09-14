@@ -55,7 +55,7 @@ shopt -s lithist
 # and ones used identically just before.
 HISTCONTROL=ignoreboth
 
-HISTFILE="$HOME/.bash_history"
+HISTFILE="$HOME/.cache/.bash_history"
 HISTFILESIZE=99999
 HISTSIZE=99999
 

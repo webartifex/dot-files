@@ -7,9 +7,11 @@ export TZ='Europe/Berlin'
 
 export DOT_FILES="$HOME/repos/dot-files"
 export BAT_CONFIG_PATH="$DOT_FILES/.batrc"
+export LESSHISTFILE="$HOME/.cache/.lesshst"
+export PSQLRC="$DOT_FILES/.psqlrc"
 # No need for *.pyc files on a dev machine.
 export PYTHONDONTWRITEBYTECODE=1
-
+export PYTHONSTARTUP="$DOT_FILES/.pythonrc"
 
 put-on-path () {
     if [ -d "$1" ] ; then
