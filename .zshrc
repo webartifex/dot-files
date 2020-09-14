@@ -44,8 +44,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # base configuration
 # ==================
 
-autoload -Uz zcalc
-
 # Enable VI mode.
 bindkey -v
 
