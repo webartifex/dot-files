@@ -47,6 +47,8 @@ update-zsh() {
     if in-zsh; then
         zplug update
     else
+        local cwd
+        cwd=$(pwd)
         # Pull down latest versions manually.
         for dir in $REPOS/zsh/*/*/; do
             echo "$dir"
