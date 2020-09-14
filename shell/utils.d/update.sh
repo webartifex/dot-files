@@ -18,6 +18,15 @@ update-apt() {
     sudo apt autoclean
 }
 
+# Pull down latest version of dot files.
+update-dot-files() {
+    local cwd
+    cwd=$(pwd)
+    cd "$DOT_FILES"
+    git pull
+    cd cwd
+}
+
 remove-old-snaps() {
     sudo snap list --all | awk "/disabled/{print $1, $3}" |
         while read snapname revision; do
@@ -59,19 +68,6 @@ update-zsh() {
     fi
 }
 
-# Copy dot files from git repo to $HOME.
-update-dot-files() {
-    # Pull down latest version of dot files.
-    cd "$DOT_FILES"
-    git pull
-    cd
-
-    # Copy all dot files to the home directory.
-    for file in '.bashrc .gitconfig .p10k.zsh .zshrc'; do
-        cp "$DOT_FILES/$file" "$HOME/$file"
-    done
-}
-
 # Wrapper to run all update functions.
 update-machine() {
     # Enforce sudo rights from the getgo.
@@ -79,6 +75,9 @@ update-machine() {
 
     echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating apt packages\033[0m\n'
     update-apt
+
+    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating dot files\033[0m\n'
+    update-dot-files
 
     if command-exists snap; then
         echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating snaps\033[0m\n'
@@ -96,6 +95,17 @@ update-machine() {
     echo
 
     sudo --reset-timestamp
+}
+
+# Copy dot files from repo to the $HOME directory.
+sync-dot-files() {
+    update-dot-files
+
+    for file in '.bashrc .gitconfig .mackup.cfg .p10k.zsh .zshrc'; do
+        cp "$DOT_FILES/$file" "$HOME/$file"
+    done
+
+    mackup backup
 }
 
 sync-machine() {
