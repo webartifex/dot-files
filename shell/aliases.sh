@@ -6,6 +6,7 @@ else
 fi
 
 alias cls='clear'
+alias help='man'
 
 source "$SH_SCRIPTS/aliases.d/files.sh"
 source "$SH_SCRIPTS/aliases.d/python.sh"
