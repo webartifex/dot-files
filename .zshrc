@@ -171,6 +171,9 @@ bindkey "^[[B" history-substring-search-down
 
 source "$DOT_FILES/shell/aliases.sh" || return
 
+# =====
+# other
+# =====
 
 # Enable Powerlevel10k "full" prompt.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

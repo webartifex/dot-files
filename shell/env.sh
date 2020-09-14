@@ -14,6 +14,8 @@ export PSQLRC="$DOT_FILES/.psqlrc"
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONSTARTUP="$DOT_FILES/.pythonrc"
 
+# $PATH related stuff.
+
 put-on-path () {
     if [ -d "$1" ] ; then
         case :$PATH: in  # Check if the folder is already included

@@ -1,4 +1,4 @@
-# Ensure bash is running interactively
+# Ensure bash is running interactively.
 [[ $- != *i* ]] && return
 
 
