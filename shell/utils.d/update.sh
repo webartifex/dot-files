@@ -72,7 +72,7 @@ update-dot-files() {
 }
 
 # Wrapper to run all update functions.
-update-system() {
+update-machine() {
     # Enforce sudo rights from the getgo.
     sudo --validate || return
 
@@ -95,4 +95,13 @@ update-system() {
     echo
 
     sudo --reset-timestamp
+}
+
+sync-machine() {
+    # Pull down latest version of dot files.
+    cd "$DOT_FILES"
+    git pull
+    cd
+
+    source "$DOT_FILES/shell/setup.d/apt.sh"
 }
