@@ -10,8 +10,8 @@ in-zsh() {
     [ -n "$ZSH_VERSION" ]
 }
 
-source "$DOT_FILES/shell/utils.d/files.sh"
-source "$DOT_FILES/shell/utils.d/passwords.sh"
-source "$DOT_FILES/shell/utils.d/services.sh"
-source "$DOT_FILES/shell/utils.d/update.sh"
-source "$DOT_FILES/shell/utils.d/misc.sh"
+source "$SH_SCRIPTS/utils.d/files.sh"
+source "$SH_SCRIPTS/utils.d/passwords.sh"
+source "$SH_SCRIPTS/utils.d/services.sh"
+source "$SH_SCRIPTS/utils.d/update.sh"
+source "$SH_SCRIPTS/utils.d/misc.sh"

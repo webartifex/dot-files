@@ -7,7 +7,7 @@ fi
 
 alias cls='clear'
 
-source "$DOT_FILES/shell/aliases.d/files.sh"
-source "$DOT_FILES/shell/aliases.d/python.sh"
-source "$DOT_FILES/shell/aliases.d/utils.sh"
-source "$DOT_FILES/shell/aliases.d/vaults.sh"
+source "$SH_SCRIPTS/aliases.d/files.sh"
+source "$SH_SCRIPTS/aliases.d/python.sh"
+source "$SH_SCRIPTS/aliases.d/utils.sh"
+source "$SH_SCRIPTS/aliases.d/vaults.sh"

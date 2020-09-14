@@ -1,12 +1,16 @@
-# Define generic environment variables.
+# Machine-specific directories.
+export REPOS="$HOME/repos"
+export DOT_FILES="$REPOS/dot-files"
+export SH_SCRIPTS="$DOT_FILES/shell"
 
+# Generic environment variables.
 export EDITOR=vim
 export PAGER='less --chop-long-lines --ignore-case --LONG-PROMPT --no-init --status-column --quit-if-one-screen'
 export TERM=xterm-256color
 export TZ='Europe/Berlin'
 export VISUAL=$EDITOR
 
-export DOT_FILES="$HOME/repos/dot-files"
+# Environment varibales configuring various utilities.
 export BAT_CONFIG_PATH="$DOT_FILES/.batrc"
 export LESSHISTFILE="$HOME/.cache/.lesshst"
 export PSQLRC="$DOT_FILES/.psqlrc"

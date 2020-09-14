@@ -73,14 +73,8 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # bash/zsh utilities
 # ==================
 
-source "$DOT_FILES/shell/utils.sh" || return
-
-
-# ===============
-# initializations
-# ===============
-
-source "$DOT_FILES/shell/init.sh" || return
+source "$SH_SCRIPTS/utils.sh" || return
+source "$SH_SCRIPTS/init.sh" || return
 
 
 # ===========
@@ -200,7 +194,7 @@ export PROMPT_COMMAND="xtitle; $PROMPT_COMMAND"
 # aliases
 # =======
 
-source "$DOT_FILES/shell/aliases.sh" || return
+source "$SH_SCRIPTS/aliases.sh" || return
 
 # Add tab completion for all aliases to commands with completion functions
 # Source: https://superuser.com/a/437508

@@ -101,14 +101,8 @@ bindkey "^R" history-incremental-search-backward
 # bash/zsh utilities
 # ==================
 
-source "$DOT_FILES/shell/utils.sh" || return
-
-
-# ===============
-# initializations
-# ===============
-
-source "$DOT_FILES/shell/init.sh" || return
+source "$SH_SCRIPTS/utils.sh" || return
+source "$SH_SCRIPTS/init.sh" || return
 
 
 # ===========
@@ -176,7 +170,8 @@ bindkey "^[[B" history-substring-search-down
 # aliases
 # =======
 
-source "$DOT_FILES/shell/aliases.sh" || return
+source "$SH_SCRIPTS/aliases.sh" || return
+
 
 # =====
 # other

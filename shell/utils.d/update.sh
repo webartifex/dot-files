@@ -103,5 +103,5 @@ sync-machine() {
     git pull
     cd
 
-    source "$DOT_FILES/shell/setup.d/apt.sh"
+    source "$SH_SCRIPTS/setup.d/apt.sh"
 }
