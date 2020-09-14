@@ -4,6 +4,7 @@ export EDITOR=vim
 export PAGER='less --chop-long-lines --ignore-case --LONG-PROMPT --no-init --status-column --quit-if-one-screen'
 export TERM=xterm-256color
 export TZ='Europe/Berlin'
+export VISUAL=$EDITOR
 
 export DOT_FILES="$HOME/repos/dot-files"
 export BAT_CONFIG_PATH="$DOT_FILES/.batrc"
