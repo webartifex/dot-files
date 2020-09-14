@@ -80,12 +80,12 @@ unalias -a
 # history
 # =======
 
-HISTFILE="$HOME/.cache/.zsh_history"
-HISTSIZE=99999
-SAVEHIST=99999
+export HISTFILE="$HOME/.cache/.zsh_history"
+export HISTSIZE=99999
+export SAVEHIST=99999
 
 # Keep common built-in commands out of the history.
-HISTORY_IGNORE="([bf]g|cd|cd ..|clear|date|datetime|exit|history|jobs|jobs -l|ls|ls *|pwd)"
+export HISTORY_IGNORE="([bf]g|cd|cd ..|clear|date|datetime|exit|history|jobs|jobs -l|ls|ls *|pwd)"
 
 # Show date and time when using history command.
 alias history="history -i"

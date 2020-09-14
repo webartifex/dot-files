@@ -53,20 +53,20 @@ shopt -s lithist
 
 # Ignore commands prefixed with a space,
 # and ones used identically just before.
-HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoreboth
 
-HISTFILE="$HOME/.cache/.bash_history"
-HISTFILESIZE=99999
-HISTSIZE=99999
+export HISTFILE="$HOME/.cache/.bash_history"
+export HISTFILESIZE=99999
+export HISTSIZE=99999
 
 # Keep common built-in commands out of the history.
-HISTIGNORE='[bf]g:cd:cd ..:clear:date:datetime:exit:history:jobs:jobs -l:ls:ls *:pwd'
+export HISTIGNORE='[bf]g:cd:cd ..:clear:date:datetime:exit:history:jobs:jobs -l:ls:ls *:pwd'
 
 # Show date and time when using history command.
-HISTTIMEFORMAT='%Y-%m-%d %H:%M  '
+export HISTTIMEFORMAT='%Y-%m-%d %H:%M  '
 
 # Append the history after each command to avoid accidental loss.
-PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 
 # ==================
