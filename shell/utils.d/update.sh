@@ -108,11 +108,12 @@ sync-dot-files() {
     mackup backup
 }
 
+# Sync machine to the state kept in the dot-files repo.
+# This basically ensures that a machine has all the packages/stuff
+# specified in the dot-files repo installed loacally.
+# Old packages/stuff is NOT removed.
 sync-machine() {
-    # Pull down latest version of dot files.
-    cd "$DOT_FILES"
-    git pull
-    cd
+    sync-dot-files
 
     source "$SH_SCRIPTS/setup.d/apt.sh"
 }
