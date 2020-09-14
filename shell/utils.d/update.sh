@@ -24,7 +24,7 @@ update-dot-files() {
     cwd=$(pwd)
     cd "$DOT_FILES"
     git pull
-    cd cwd
+    cd $cwd
 }
 
 remove-old-snaps() {
@@ -64,7 +64,7 @@ update-zsh() {
             cd $dir
             git pull
         done
-        cd
+        cd $cwd
     fi
 }
 
