@@ -159,12 +159,12 @@ untracked = red bold
 [commit]
 cleanup = strip
 gpgSign = true
-template = ~/repos/dot-files/git/.gitcimsg
+template = ~/repos/dot-files/.gitcimsg
 verbose = true
 
 [core]
 editor = vim
-excludesfile = ~/repos/dot-files/git/.gitignore
+excludesfile = ~/repos/dot-files/.gitignore
 pager = less --chop-long-lines --ignore-case --LONG-PROMPT --status-column --quit-if-one-screen
 whitespace = -space-before-tab,tab-in-indent
 
