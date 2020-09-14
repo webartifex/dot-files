@@ -18,35 +18,6 @@ colors
 source "$HOME/repos/dot-files/shell/env.sh" || return
 
 
-# ========================
-# zsh specific environment
-# ========================
-
-plugins=(
-    command-not-found
-    dotenv
-    git-auto-fetch
-    git-escape-magic
-    history-substring-search
-    pyenv
-    z
-    zsh-autosuggestions
-    zsh-completions
-    zsh-syntax-highlighting
-)
-
-# Update together with system update.
-DISABLE_AUTO_UPDATE="true"
-DISABLE_UPDATE_PROMPT="true"
-
-ZSH_COMPDUMP="$HOME/.cache/.zcompdump-$HOST-$ZSH_VERSION"
-
-# Make dotenv source .env files silently.
-ZSH_DOTENV_PROMPT=false
-
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
-
 # ==================
 # base configuration
 # ==================
@@ -68,12 +39,45 @@ setopt NO_BEEP
 # Report status of background jobs immediately.
 setopt NOTIFY
 
-# Initialize oh-my-zhs.
-export ZSH="$HOME/repos/ohmyzsh"
-source "$ZSH/oh-my-zsh.sh"
-
 # Remove all "built-in" aliases.
 unalias -a
+
+export ZSH_COMPDUMP="$HOME/.cache/.zcompdump-$HOST-$ZSH_VERSION"
+
+
+# =============
+# zplug/plugins
+# =============
+
+source "$REPOS/zsh/zplug/zplug/init.zsh"
+
+export ZPLUG_REPOS="$REPOS/zsh"
+
+# Must use double quotes in this section.
+# Source: https://github.com/zplug/zplug#example
+
+zplug "zplug/zplug", hook-build:"zplug --self-manage"
+
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-history-substring-search"
+
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "plugins/dotenv", from:oh-my-zsh
+zplug "plugins/git-auto-fetch", from:oh-my-zsh
+zplug "plugins/git-escape-magic", from:oh-my-zsh
+zplug "plugins/pyenv", from:oh-my-zsh
+zplug "plugins/z", from:oh-my-zsh
+
+zplug "MichaelAquilina/zsh-you-should-use"
+export YSU_MESSAGE_POSITION="after"
+# Show all matching aliases.
+export YSU_MODE="ALL"
+
+zplug "romkatv/powerlevel10k", as:theme, depth:1
+
+zplug load
 
 
 # =======
@@ -112,6 +116,8 @@ source "$SH_SCRIPTS/init.sh" || return
 autoload -Uz compinit
 compinit
 
+zmodload zsh/complist
+
 # Include hidden files in tab completion.
 _comp_options+=(GLOB_DOTS)
 
@@ -146,7 +152,12 @@ if command-exists gh; then
 fi
 
 command-exists invoke && eval "$(invoke --print-completion-script zsh)"
-command-exists nox && eval "$(register-python-argcomplete nox)"
+
+if command-exists nox; then
+    autoload -U bashcompinit
+    bashcompinit
+    eval "$(register-python-argcomplete nox)"
+fi
 
 if command-exists poetry; then
     # Causes output during zsh initialization.
@@ -162,8 +173,9 @@ fi
 bindkey "^ " autosuggest-accept
 
 # history-substring-search plugin.
-bindkey "^[[A" history-substring-search-up
-bindkey "^[[B" history-substring-search-down
+# Source: https://github.com/zsh-users/zsh-history-substring-search#usage
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
 
 # =======

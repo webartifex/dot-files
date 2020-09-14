@@ -44,17 +44,16 @@ update-python() {
 
 # Update everything related to zsh.
 update-zsh() {
-    # Pull down latest versions of manually installed zsh plugins.
-    for dir in $HOME/repos/ohmyzsh/custom/{plugins,themes}/*/; do
-        echo "$dir"
-        cd $dir
-        git pull
-    done
-    cd
-
-    # omz only works from within a zsh instance.
     if in-zsh; then
-        omz update
+        zplug update
+    else
+        # Pull down latest versions manually.
+        for dir in $REPOS/zsh/*/*/; do
+            echo "$dir"
+            cd $dir
+            git pull
+        done
+        cd
     fi
 }
 
