@@ -1,0 +1,11 @@
+echo "Creating mount folders for the gocryptfs vaults"
+mkdir -p "$HOME/vaults/dropbox-vault"
+ln -fs "$HOME/vaults/dropbox-vault" "$HOME/documents/vault"
+mkdir -p "$HOME/vaults/storage1-vault"
+mkdir -p "$HOME/vaults/storage2-vault"
+mkdir -p "$HOME/vaults/storage3-vault"
+mkdir -p "$HOME/vaults/DATATRAVEL-vault"
+mkdir -p "$HOME/vaults/INFORMS-vault"
+mkdir -p "$HOME/vaults/KUEHNE-vault"
+mkdir -p "$HOME/vaults/TRANSCEND-vault"
+echo

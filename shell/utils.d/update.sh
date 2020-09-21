@@ -121,5 +121,6 @@ sync-dot-files() {
 sync-machine() {
     sync-dot-files
 
+    source "$SH_SCRIPTS/setup.d/vault_folders.sh"
     source "$SH_SCRIPTS/setup.d/apt.sh"
 }
