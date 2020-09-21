@@ -1,3 +1,11 @@
+echo "Removing unneeded apt packages"
+sudo apt purge -y\
+    apport\
+    popularity-contest\
+    whoopsie
+echo
+
+echo "Installing apt packages"
 sudo apt-get install -y\
     bat\
     bleachbit\
@@ -90,3 +98,37 @@ sudo apt-get install -y\
     wget\
     zsh\
         zsh-doc
+echo
+
+# The apps and utilities listed here can either not be removed due
+# to a dependency issue with pop-shell or are used via the CLI only.
+echo "Removing unneeded launchers from Gnome's applications list"
+sudo rm /usr/share/applications/calibre-ebook-edit.desktop 2>/dev/null
+sudo rm /usr/share/applications/calibre-ebook-viewer.desktop 2>/dev/null
+sudo rm /usr/share/applications/calibre-lrfviewer.desktop 2>/dev/null
+sudo rm /usr/share/applications/cmatrix.desktop 2>/dev/null
+sudo rm /usr/share/applications/com.github.donadigo.eddy.desktop 2>/dev/null
+sudo rm /usr/share/applications/com.system76.Popsicle.desktop 2>/dev/null
+sudo rm /usr/share/applications/display-im6.q16.desktop 2>/dev/null
+sudo rm /usr/share/applications/htop.desktop 2>/dev/null
+sudo rm /usr/share/applications/im-config.desktop 2>/dev/null
+sudo rm /usr/share/applications/info.desktop 2>/dev/null
+sudo rm /usr/share/applications/julia.desktop 2>/dev/null
+sudo rm /usr/share/applications/libreoffice-draw.desktop 2>/dev/null
+sudo rm /usr/share/applications/libreoffice-math.desktop 2>/dev/null
+sudo rm /usr/share/applications/libreoffice-startcenter.desktop 2>/dev/null
+sudo rm /usr/share/applications/libreoffice-xsltfilter.desktop 2>/dev/null
+sudo rm /usr/share/applications/org.gnome.Calendar.desktop 2>/dev/null
+sudo rm /usr/share/applications/org.gnome.Contacts.desktop 2>/dev/null
+sudo rm /usr/share/applications/org.gnome.Extensions.desktop 2>/dev/null
+sudo rm /usr/share/applications/org.gnome.Geary.desktop 2>/dev/null
+sudo rm /usr/share/applications/org.gnome.Screenshot.desktop 2>/dev/null
+sudo rm /usr/share/applications/org.gnome.Totem.desktop 2>/dev/null
+sudo rm /usr/share/applications/org.gnome.Weather.desktop 2>/dev/null
+sudo rm /usr/share/applications/R.desktop 2>/dev/null
+sudo rm /usr/share/applications/ranger.desktop 2>/dev/null
+sudo rm /usr/share/applications/simple-scan.desktop 2>/dev/null
+sudo rm /usr/share/applications/texdoctk.desktop 2>/dev/null
+sudo rm /usr/share/applications/vim.desktop 2>/dev/null
+sudo rm /usr/share/applications/yelp.desktop 2>/dev/null
+echo
