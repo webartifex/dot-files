@@ -100,6 +100,11 @@ sudo apt-get install -y\
         zsh-doc
 echo
 
+# Make Julia available in Jupyter notebooks.
+echo "Installing/updating iJulia"
+julia --eval 'using Pkg; Pkg.add("IJulia")'
+echo
+
 # The apps and utilities listed here can either not be removed due
 # to a dependency issue with pop-shell or are used via the CLI only.
 echo "Removing unneeded launchers from Gnome's applications list"
