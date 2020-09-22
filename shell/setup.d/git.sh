@@ -64,7 +64,6 @@ rm "$HOME/.profile" 2>/dev/null
 export DOT_FILES="$REPOS/dot-files"
 cp "$DOT_FILES/.bashrc" "$HOME/.bashrc"
 cp "$DOT_FILES/.gitconfig" "$HOME/.gitconfig"
-cp "$DOT_FILES/.zshrc" "$HOME/.zshrc"
 echo
 
 export SH_SCRIPTS="$DOT_FILES/shell"

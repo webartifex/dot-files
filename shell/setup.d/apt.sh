@@ -98,9 +98,7 @@ sudo apt-get install -y\
         vim-python-jedi\
         vim-scripts\
     vlc\
-    wget\
-    zsh\
-        zsh-doc
+    wget
 echo
 
 # Make Julia available in Jupyter notebooks.
