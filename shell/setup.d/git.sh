@@ -1,4 +1,5 @@
 echo "Installing git"
+echo
 sudo apt-get install -y\
     git\
     git-doc\
@@ -39,6 +40,7 @@ read -p "Press a key to continue ..." -n1 -r
 echo
 
 echo "Cloning repositories"
+echo
 export REPOS="$HOME/repos"
 mkdir "$REPOS"
 cd "$REPOS"
@@ -56,6 +58,9 @@ git clone git@github.com:webartifex/password-store.git .password-store
 echo
 
 echo "Restoring dot files"
+rm "$HOME/.bash_history" 2>/dev/null
+rm "$HOME/.bash_logout" 2>/dev/null
+rm "$HOME/.profile" 2>/dev/null
 export DOT_FILES="$REPOS/dot-files"
 cp "$DOT_FILES/.bashrc" "$HOME/.bashrc"
 cp "$DOT_FILES/.gitconfig" "$HOME/.gitconfig"
@@ -65,12 +70,14 @@ echo
 export SH_SCRIPTS="$DOT_FILES/shell"
 
 echo "Installing gh"
+echo
 wget "https://github.com/cli/cli/releases/download/v${GH_VER}/gh_${GH_VER}_linux_amd64.deb" -O gh.deb
 sudo apt-get install -y ./gh.deb
 rm gh.deb
 echo
 
 echo "Installing tig"
+echo
 git clone git@github.com:jonas/tig.git
 cd "$HOME/tig"
 git checkout "tig-${TIG_VER}"

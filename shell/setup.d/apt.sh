@@ -1,11 +1,14 @@
 echo "Removing unneeded apt packages"
+echo
 sudo apt purge -y\
     apport\
     popularity-contest\
     whoopsie
+sudo apt-get autoremove -y
 echo
 
 echo "Installing apt packages"
+echo
 sudo apt-get install -y\
     bat\
     bleachbit\
@@ -28,7 +31,7 @@ sudo apt-get install -y\
         gpgsm\
         parcimonie\
         pinentry-gtk2 pinentry-doc\
-        scdaemon
+        scdaemon\
     gnutls-bin\
     gocryptfs\
     gpw\
@@ -102,6 +105,7 @@ echo
 
 # Make Julia available in Jupyter notebooks.
 echo "Installing/updating iJulia"
+echo
 julia --eval 'using Pkg; Pkg.add("IJulia")'
 echo
 

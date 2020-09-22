@@ -19,6 +19,7 @@ cd $HOME
 echo
 
 echo "Updating the system"
+echo
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
@@ -52,6 +53,7 @@ echo "vm.swappiness = 5" | sudo tee -a /etc/sysctl.conf > /dev/null
 echo
 
 echo "Downloading the setup scripts"
+echo
 sudo apt-get install -y git
 git clone https://github.com/webartifex/dot-files.git
 export DOT_FILES="$HOME/dot-files"
@@ -59,6 +61,7 @@ export SH_SCRIPTS="$DOT_FILES/shell"
 echo
 
 echo "Use main mirrors and disable annoying reminder"
+echo
 sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo cp "$DOT_FILES/static/sources.list" /etc/apt/sources.list
@@ -67,6 +70,7 @@ sudo apt-get autoclean -y
 echo
 
 echo "Running the setup scripts"
+echo
 source "$SH_SCRIPTS/utils.sh"
 source "$SH_SCRIPTS/setup.d/apt.sh"
 source "$SH_SCRIPTS/setup.d/firefox.sh"
