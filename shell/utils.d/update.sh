@@ -27,6 +27,20 @@ update-dot-files() {
     cd $cwd
 }
 
+update-repositories() {
+    local cwd
+    cwd=$(pwd)
+    cd "$REPOS"
+    for dir in */; do
+        [ "$dir" = "zsh/" ] && continue
+        echo "$REPOS/$dir"
+        cd "$REPOS/$dir"
+        git fetch --all --prune
+        echo
+    done
+    cd $cwd
+}
+
 remove-old-snaps() {
     sudo snap list --all | awk "/disabled/{print $1, $3}" |
         while read snapname revision; do
