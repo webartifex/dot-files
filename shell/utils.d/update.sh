@@ -84,7 +84,6 @@ update-zsh() {
 
 # Wrapper to run all update functions.
 update-machine() {
-    # Enforce sudo rights from the getgo.
     sudo --validate || return
 
     echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating apt packages\033[0m\n'
@@ -133,10 +132,14 @@ sync-dot-files() {
 # specified in the dot-files repo installed loacally.
 # Old packages/stuff is NOT removed.
 sync-machine() {
+    sudo --validate || return
+
     sync-dot-files
 
     source "$SH_SCRIPTS/setup.d/vault_folders.sh"
     source "$SH_SCRIPTS/setup.d/apt.sh"
     source "$SH_SCRIPTS/setup.d/firefox.sh"
     source "$SH_SCRIPTS/setup.d/git.sh"
+
+    sudo --reset-timestamp
 }
