@@ -137,4 +137,6 @@ sync-machine() {
 
     source "$SH_SCRIPTS/setup.d/vault_folders.sh"
     source "$SH_SCRIPTS/setup.d/apt.sh"
+    source "$SH_SCRIPTS/setup.d/firefox.sh"
+    source "$SH_SCRIPTS/setup.d/git.sh"
 }
