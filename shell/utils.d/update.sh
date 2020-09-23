@@ -23,7 +23,9 @@ update-dot-files() {
     local cwd
     cwd=$(pwd)
     cd "$DOT_FILES"
+    git stash
     git pull
+    git stash pop
     cd $cwd
 }
 
