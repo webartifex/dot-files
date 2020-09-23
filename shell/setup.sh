@@ -16,19 +16,16 @@ if [ "$EUID" -eq 0 ]; then
 fi
 sudo --validate || exit
 cd $HOME
-echo
 
-echo "Updating the system"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating the system\033[0m\n'
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 sudo apt-get autoclean -y
 sudo apt-get clean -y
 sudo apt-get autoremove -y
-echo
 
-echo "Changing default folders to lower case names"
+echo -e '\n\033[36m\033[2m\033[1m\033[7mChanging default folders to lower case names\033[0m\n'
 xdg-user-dirs-update --set DESKTOP "$HOME/desktop"
 mv "$HOME/Desktop" "$HOME/desktop"
 xdg-user-dirs-update --set DOCUMENTS "$HOME/documents"
@@ -45,41 +42,32 @@ xdg-user-dirs-update --set TEMPLATES "$HOME/templates"
 mv "$HOME/Templates" "$HOME/templates"
 xdg-user-dirs-update --set VIDEOS "$HOME"
 rm -r "$HOME/Videos"
-echo
 
 # A lower swappiness results in less hard disk usage by temporary data.
-echo "Lowering the swappiness"
+echo -e '\n\033[36m\033[2m\033[1m\033[7mLowering the swappiness\033[0m\n'
 echo "vm.swappiness = 5" | sudo tee -a /etc/sysctl.conf > /dev/null
-echo
 
-echo "Downloading the setup scripts"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mDownloading the setup scripts\033[0m\n'
 sudo apt-get install -y git
 git clone https://github.com/webartifex/dot-files.git
 export DOT_FILES="$HOME/dot-files"
 export SH_SCRIPTS="$DOT_FILES/shell"
-echo
 
-echo "Use main mirrors and disable annoying reminder"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mUse main mirrors and disable reminder\033[0m\n'
 sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo cp "$DOT_FILES/static/sources.list" /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get autoclean -y
-echo
 
-echo "Running the setup scripts"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mRunning the setup scripts\033[0m\n'
 source "$SH_SCRIPTS/utils.sh"
 source "$SH_SCRIPTS/setup.d/apt.sh"
 source "$SH_SCRIPTS/setup.d/firefox.sh"
 source "$SH_SCRIPTS/setup.d/git.sh"
 source "$SH_SCRIPTS/setup.d/zsh.sh"
-echo
 
-echo "Removing the setup scripts"
+echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving the setup scripts\033[0m\n'
 rm -rf "$HOME/dot-files"
-echo
 
-echo "Installation completed. Please restart the machine!"
+echo "\nInstallation completed. Please restart the machine!"

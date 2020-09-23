@@ -1,10 +1,8 @@
-echo "Installing git"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling git\033[0m\n'
 sudo apt-get install -y\
     git\
     git-doc\
     git-flow
-echo
 
 
 # Lines below this are only executed during installation.
@@ -39,8 +37,7 @@ echo "
 read -p "Press a key to continue ..." -n1 -r
 echo
 
-echo "Cloning repositories"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mCloning repositories\033[0m\n'
 export REPOS="$HOME/repos"
 mkdir "$REPOS"
 cd "$REPOS"
@@ -55,28 +52,23 @@ git clone git@github.com:webartifex/webartifex.git
 git clone git@github.com:webartifex/workshop-machine-learning-for-beginners.git
 cd "$HOME"
 git clone git@github.com:webartifex/password-store.git .password-store
-echo
 
-echo "Restoring dot files"
+echo -e '\n\033[36m\033[2m\033[1m\033[7mRestoring dot files\033[0m\n'
 rm "$HOME/.bash_history" 2>/dev/null
 rm "$HOME/.bash_logout" 2>/dev/null
 rm "$HOME/.profile" 2>/dev/null
 export DOT_FILES="$REPOS/dot-files"
 cp "$DOT_FILES/.bashrc" "$HOME/.bashrc"
 cp "$DOT_FILES/.gitconfig" "$HOME/.gitconfig"
-echo
 
 export SH_SCRIPTS="$DOT_FILES/shell"
 
-echo "Installing gh"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling gh\033[0m\n'
 wget "https://github.com/cli/cli/releases/download/v${GH_VER}/gh_${GH_VER}_linux_amd64.deb" -O gh.deb
 sudo apt-get install -y ./gh.deb
 rm gh.deb
-echo
 
-echo "Installing tig"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling tig\033[0m\n'
 git clone git@github.com:jonas/tig.git
 cd "$HOME/tig"
 git checkout "tig-${TIG_VER}"
@@ -84,4 +76,3 @@ make prefix=/usr/local
 sudo make install prefix=/usr/local
 cd "$HOME"
 sudo rm -rf "$HOME/tig/"
-echo

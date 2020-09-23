@@ -1,5 +1,4 @@
-echo "Installing Firefox"
-echo
+echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Firefox\033[0m\n'
 sudo apt-get install -y\
     firefox\
     apparmor-profiles\
@@ -8,7 +7,6 @@ sudo apt-get install -y\
     appmenu-gtk3-module\
     chrome-gnome-shell\
     gir1.2-gtop-2.0  # needed for system-monitor extension
-echo
 
 
 # Non-installation specific code is executed after this if statement.
@@ -30,8 +28,7 @@ if [ -n "$SETUP_SYSTEM" ]; then
 
 fi
 
-
-echo "Moving Gnome shell extensions to global folder (from user-site)"
+echo -e '\n\033[36m\033[2m\033[1m\033[7mMoving Gnome Shell extensions to global folder\033[0m\n'
 # The global folder may contain old versions that are removed.
 cwd=$(pwd)
 cd "$HOME/.local/share/gnome-shell/extensions"
@@ -40,4 +37,3 @@ for dir in */; do
 done
 sudo mv $HOME/.local/share/gnome-shell/extensions/* /usr/share/gnome-shell/extensions 2>/dev/null
 cd $cwd
-echo

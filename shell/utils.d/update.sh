@@ -9,6 +9,8 @@ alias agu='sudo apt update && sudo apt upgrade'
 
 # Run entire aptitude upgrade cycle (incl. removal of old packages).
 update-apt() {
+    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating apt packages\033[0m\n'
+
     sudo apt update
     echo
     sudo apt upgrade
@@ -20,6 +22,8 @@ update-apt() {
 
 # Pull down latest version of dot files.
 update-dot-files() {
+    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating dot files\033[0m\n'
+
     local cwd
     cwd=$(pwd)
     cd "$DOT_FILES"
@@ -51,6 +55,8 @@ remove-old-snaps() {
 }
 
 update-python() {
+    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating the Python tool chain\033[0m\n'
+
     /usr/bin/python -m pip install --user --upgrade pip pipx setuptools virtualenv
     echo
 
@@ -69,6 +75,8 @@ update-python() {
 
 # Update everything related to zsh.
 update-zsh() {
+    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating zsh\033[0m\n'
+
     if in-zsh; then
         zplug update
     else
@@ -88,10 +96,7 @@ update-zsh() {
 update-machine() {
     sudo --validate || return
 
-    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating apt packages\033[0m\n'
     update-apt
-
-    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating dot files\033[0m\n'
     update-dot-files
 
     if command-exists flatpak; then
@@ -105,10 +110,7 @@ update-machine() {
         remove-old-snaps
     fi
 
-    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating the Python tool chain\033[0m\n'
     update-python
-
-    echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating zsh\033[0m\n'
     update-zsh
 
     echo -e '\n\033[36m\033[2m\033[1m\033[7mOther\033[0m\n'
