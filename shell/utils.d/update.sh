@@ -151,6 +151,7 @@ sync-machine() {
     source "$SH_SCRIPTS/setup.d/git.sh"
     source "$SH_SCRIPTS/setup.d/zsh.sh"
     source "$SH_SCRIPTS/setup.d/gnome.sh"
+    source "$SH_SCRIPTS/setup.d/gpg.sh"
 
     sudo --reset-timestamp
 }

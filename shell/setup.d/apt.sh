@@ -24,12 +24,6 @@ sudo apt-get install -y\
     gimp\
         gimp-help-en\
     gnome-tweaks\
-    gnupg\
-        gpg-agent\
-        gpgsm\
-        parcimonie\
-        pinentry-gtk2 pinentry-doc\
-        scdaemon\
     gnutls-bin\
     gocryptfs\
     gpw\
@@ -61,7 +55,6 @@ sudo apt-get install -y\
     libpam-tmpdir\
     locales-all\
     pandoc\
-    pass\
     pavucontrol\
     pwgen\
     r-base\
