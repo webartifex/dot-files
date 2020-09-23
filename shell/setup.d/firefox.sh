@@ -32,8 +32,10 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mMoving Gnome Shell extensions to global 
 # The global folder may contain old versions that are removed.
 cwd=$(pwd)
 cd "$HOME/.local/share/gnome-shell/extensions"
+in-zsh && unsetopt NOMATCH
 for dir in */; do
     sudo rm -rf "/usr/share/gnome-shell/extensions/$dir"
 done
 sudo mv $HOME/.local/share/gnome-shell/extensions/* /usr/share/gnome-shell/extensions 2>/dev/null
+in-zsh && setopt NOMATCH
 cd $cwd
