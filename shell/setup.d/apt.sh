@@ -1,11 +1,13 @@
-echo "Removing unneeded apt packages"
-echo
-sudo apt purge -y\
-    apport\
-    popularity-contest\
-    whoopsie
-sudo apt-get autoremove -y
-echo
+if [ -n "$SETUP_SYSTEM" ]; then
+    echo "Removing unneeded apt packages"
+    echo
+    sudo apt purge -y\
+        apport\
+        popularity-contest\
+        whoopsie
+    sudo apt-get autoremove -y
+    echo
+fi
 
 echo "Installing apt packages"
 echo
