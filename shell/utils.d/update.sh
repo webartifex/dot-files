@@ -150,6 +150,7 @@ sync-machine() {
     source "$SH_SCRIPTS/setup.d/firefox.sh"
     source "$SH_SCRIPTS/setup.d/git.sh"
     source "$SH_SCRIPTS/setup.d/zsh.sh"
+    source "$SH_SCRIPTS/setup.d/gnome.sh"
 
     sudo --reset-timestamp
 }
