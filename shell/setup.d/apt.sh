@@ -24,7 +24,6 @@ sudo apt-get install -y\
     discord\
     exuberant-ctags\
     fd-find\
-    flatpak\
     gimp\
         gimp-help-en\
     gnome-tweaks\
@@ -75,7 +74,6 @@ sudo apt-get install -y\
     rsync\
         grsync\
     screenfetch\
-    spotify-client\
     sqlite3\
         sqlite3-doc\
         sqlitebrowser\
@@ -140,4 +138,13 @@ sudo rm /usr/share/applications/simple-scan.desktop 2>/dev/null
 sudo rm /usr/share/applications/texdoctk.desktop 2>/dev/null
 sudo rm /usr/share/applications/vim.desktop 2>/dev/null
 sudo rm /usr/share/applications/yelp.desktop 2>/dev/null
+echo
+
+echo "Installing flatpaks"
+echo
+sudo apt-get install -y flatpak
+if [ -n "$SETUP_SYSTEM" ]; then
+    sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+fi
+sudo flatpak install -y flathub com.spotify.Client
 echo

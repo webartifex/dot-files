@@ -92,6 +92,11 @@ update-machine() {
     echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating dot files\033[0m\n'
     update-dot-files
 
+    if command-exists flatpak; then
+        echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating flatpaks\033[0m\n'
+        sudo flatpak update -y
+    fi
+
     if command-exists snap; then
         echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating snaps\033[0m\n'
         sudo snap refresh
