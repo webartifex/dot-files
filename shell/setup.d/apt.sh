@@ -94,6 +94,7 @@ sudo apt-get install -y\
         vim-julia\
         vim-python-jedi\
         vim-scripts\
+    virtualbox\
     vlc\
     wget
 
