@@ -56,6 +56,13 @@ sudo apt-get install -y\
     locales-all\
     pandoc\
     pavucontrol\
+    postgresql\
+        postgresql-contrib\
+        postgresql-doc\
+        libjson-perl\
+        isag\
+        libgmp3-dev\
+        libpq-dev\
     pwgen\
     r-base\
         r-base-core\
