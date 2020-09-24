@@ -21,8 +21,6 @@ echo "
    ~/gpg/public.gpg and ~/gpg/private.gpg
  - make the ownertrust database available as
    ~/gpg/trustdb.txt
- - make the gpg.conf file available as
-   ~/gpg/gpg.conf
 "
 read -p "Proceed to import key pair ..." -n1 -r
 
@@ -37,7 +35,8 @@ gpg --list-keys
 echo "\nImported private key:"
 gpg --list-secret-keys
 
-cp "$HOME/gpg/gpg.conf" "$HOME/.gnupg/gpg.conf"
+cp "$DOT_FILES/gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"
+cp "$DOT_FILES/gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 
 echo "
 |---------------------|
