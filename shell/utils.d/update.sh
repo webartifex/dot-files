@@ -153,6 +153,7 @@ sync-machine() {
     source "$SH_SCRIPTS/setup.d/gnome.sh"
     source "$SH_SCRIPTS/setup.d/gpg.sh"
     source "$SH_SCRIPTS/setup.d/python.sh"
+    source "$SH_SCRIPTS/setup.d/chromium.sh"
 
     sudo --reset-timestamp
 }
