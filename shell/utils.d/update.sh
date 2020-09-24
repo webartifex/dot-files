@@ -154,6 +154,7 @@ sync-machine() {
     source "$SH_SCRIPTS/setup.d/gpg.sh"
     source "$SH_SCRIPTS/setup.d/python.sh"
     source "$SH_SCRIPTS/setup.d/chromium.sh"
+    source "$SH_SCRIPTS/setup.d/flameshot.sh"
 
     sudo --reset-timestamp
 }
