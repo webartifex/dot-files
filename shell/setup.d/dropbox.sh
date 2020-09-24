@@ -35,7 +35,7 @@ dropbox exclude add "$HOME/.dropbox.synced/Dropbox/nosync"
 dropbox throttle unlimited unlimited
 dropbox lansync n
 dropbox proxy none
-ln -s .dropbox.synced/Dropbox/sync dropbox
+ln -s "$HOME/.dropbox.synced/Dropbox/sync" dropbox
 
 echo "
 |-------------------------|

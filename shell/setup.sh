@@ -15,7 +15,7 @@ if [ "$EUID" -eq 0 ]; then
     exit
 fi
 sudo --validate || exit
-cd $HOME
+cd "$HOME"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating the system\033[0m\n'
 sudo apt-get update
@@ -73,4 +73,4 @@ source "$SH_SCRIPTS/setup.d/dropbox.sh"
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving the setup scripts\033[0m\n'
 rm -rf "$HOME/dot-files"
 
-echo "\nInstallation completed. Please restart the machine!"
+echo -e "\nInstallation completed. Please restart the machine!"

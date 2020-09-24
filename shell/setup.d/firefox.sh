@@ -38,4 +38,4 @@ for dir in */; do
 done
 sudo mv $HOME/.local/share/gnome-shell/extensions/* /usr/share/gnome-shell/extensions 2>/dev/null
 in-zsh && setopt NOMATCH
-cd $cwd
+cd "$cwd"

@@ -13,6 +13,7 @@ EMAIL="alexander@webartifex.biz"
 GH_VER="1.0.0"  # -> https://github.com/cli/cli/releases/
 TIG_VER="2.5.1"  # -> https://github.com/jonas/tig/releases/
 
+
 echo "
 |------------------|
 | Generate SSH key |

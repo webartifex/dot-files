@@ -29,10 +29,10 @@ gpg --import "$HOME/gpg/public.gpg"
 gpg --allow-secret-key-import --import "$HOME/gpg/private.gpg"
 gpg --import-ownertrust "$HOME/gpg/trustdb.txt"
 
-echo "\nImported public key:"
+echo -e "\nImported public key:"
 gpg --list-keys
 
-echo "\nImported private key:"
+echo -e "\nImported private key:"
 gpg --list-secret-keys
 
 cp "$DOT_FILES/gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"

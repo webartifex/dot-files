@@ -30,7 +30,7 @@ update-dot-files() {
     git stash
     git pull
     git stash pop
-    cd $cwd
+    cd "$cwd"
 }
 
 update-repositories() {
@@ -44,7 +44,7 @@ update-repositories() {
         git fetch --all --prune
         echo
     done
-    cd $cwd
+    cd "$cwd"
 }
 
 remove-old-snaps() {
@@ -85,10 +85,10 @@ update-zsh() {
         # Pull down latest versions manually.
         for dir in $REPOS/zsh/*/*/; do
             echo "$dir"
-            cd $dir
+            cd "$dir"
             git pull
         done
-        cd $cwd
+        cd "$cwd"
     fi
 }
 
