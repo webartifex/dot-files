@@ -139,4 +139,3 @@ sudo apt-get install -y flatpak
 if [ -n "$SETUP_SYSTEM" ]; then
     sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 fi
-sudo flatpak install -y flathub com.spotify.Client
