@@ -2,7 +2,7 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Zoom\033[0m\n'
 
 cd "$HOME"
 wget https://zoom.us/client/latest/zoom_amd64.deb
-sudo apt-get install -y ./zoom_amd64.deb
+sudo apt-get install --no-install-recommends --yes ./zoom_amd64.deb
 rm zoom_amd64.deb
 
 

@@ -5,12 +5,12 @@ cd "$HOME"
 echo "Installing Teams"
 # Source: https://www.microsoft.com/de-de/microsoft-365/microsoft-teams/download-app
 wget "https://go.microsoft.com/fwlink/p/?linkid=2112886" -O teams.deb
-sudo apt-get install -y ./teams.deb
+sudo apt-get install --no-install-recommends --yes ./teams.deb
 rm teams.deb
 
 echo "Installing Skype"
 wget https://go.skype.com/skypeforlinux-64.deb
-sudo apt-get install -y ./skypeforlinux-64.deb
+sudo apt-get install --no-install-recommends --yes ./skypeforlinux-64.deb
 rm skypeforlinux-64.deb
 
 

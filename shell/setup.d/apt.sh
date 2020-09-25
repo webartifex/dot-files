@@ -1,14 +1,14 @@
 if [ -n "$SETUP_SYSTEM" ]; then
     echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving unneeded apt packages\033[0m\n'
-    sudo apt purge -y\
+    sudo apt purge --yes\
         apport\
         popularity-contest\
         whoopsie
-    sudo apt-get autoremove -y
+    sudo apt-get autoremove --yes
 fi
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling apt packages\033[0m\n'
-sudo apt-get install -y\
+sudo apt-get install --no-install-recommends --yes\
     bat\
     bleachbit\
     calibre\
@@ -133,7 +133,7 @@ sudo rm /usr/share/applications/vim.desktop 2>/dev/null
 sudo rm /usr/share/applications/yelp.desktop 2>/dev/null
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling flatpaks\033[0m\n'
-sudo apt-get install -y flatpak
+sudo apt-get install --no-install-recommends --yes flatpak
 if [ -n "$SETUP_SYSTEM" ]; then
     sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 fi

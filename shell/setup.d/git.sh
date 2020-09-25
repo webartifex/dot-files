@@ -1,5 +1,5 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling git\033[0m\n'
-sudo apt-get install -y\
+sudo apt-get install --no-install-recommends --yes\
     git\
     git-doc\
     git-flow
@@ -66,7 +66,7 @@ export SH_SCRIPTS="$DOT_FILES/shell"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling gh\033[0m\n'
 wget "https://github.com/cli/cli/releases/download/v${GH_VER}/gh_${GH_VER}_linux_amd64.deb" -O gh.deb
-sudo apt-get install -y ./gh.deb
+sudo apt-get install --no-install-recommends --yes ./gh.deb
 rm gh.deb
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling tig\033[0m\n'

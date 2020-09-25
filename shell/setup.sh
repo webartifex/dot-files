@@ -19,11 +19,11 @@ cd "$HOME"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating the system\033[0m\n'
 sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
-sudo apt-get autoclean -y
-sudo apt-get clean -y
-sudo apt-get autoremove -y
+sudo apt-get upgrade --yes
+sudo apt-get dist-upgrade --yes
+sudo apt-get autoclean --yes
+sudo apt-get clean --yes
+sudo apt-get autoremove --yes
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mChanging default folders to lower case names\033[0m\n'
 xdg-user-dirs-update --set DESKTOP "$HOME/desktop"
@@ -48,7 +48,7 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mLowering the swappiness\033[0m\n'
 echo "vm.swappiness = 5" | sudo tee -a /etc/sysctl.conf > /dev/null
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mDownloading the setup scripts\033[0m\n'
-sudo apt-get install -y git
+sudo apt-get install --no-install-recommends --yes git
 git clone https://github.com/webartifex/dot-files.git
 export DOT_FILES="$HOME/dot-files"
 export SH_SCRIPTS="$DOT_FILES/shell"
@@ -58,12 +58,12 @@ sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo cp "$DOT_FILES/static/sources.list" /etc/apt/sources.list
 sudo apt-get update
-sudo apt-get autoclean -y
+sudo apt-get autoclean --yes
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring network settings\033[0m\n'
 sudo hostnamectl set-hostname "$HOSTNAME"
 sudo cp "$DOT_FILES/static/etc_hosts" /etc/hosts
-sudo apt-get install -y macchanger
+sudo apt-get install --no-install-recommends --yes macchanger
 sudo cp "$DOT_FILES/static/macchange.conf" /etc/NetworkManager/conf.d/macchange.conf
 # Disable automated network printer search.
 sudo systemctl disable avahi-daemon

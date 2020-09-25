@@ -8,8 +8,8 @@ if [ -n "$SETUP_SYSTEM" ]; then
     echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
     sudo apt-get update
-    sudo apt-get upgrade -y
+    sudo apt-get upgrade --yes
 
 fi
 
-sudo apt-get install -y spotify-client
+sudo apt-get install --no-install-recommends --yes spotify-client

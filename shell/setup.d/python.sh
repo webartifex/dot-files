@@ -2,14 +2,14 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Python\033[0m\n'
 
 # testresources as otherwise setuptools emits a weird warning,
 # and venv as otherwise pipx does not work.
-sudo apt-get install --no-install-recommends -y\
+sudo apt-get install --no-install-recommends --yes\
     python-is-python3\
     python3-pip\
     python3-testresources\
     python3-venv
 
 # pyenv dependencies.
-sudo apt-get install --no-install-recommends -y\
+sudo apt-get install --no-install-recommends --yes\
     build-essential\
     curl\
     git\
