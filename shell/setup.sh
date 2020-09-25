@@ -63,6 +63,7 @@ sudo apt-get autoclean -y
 echo -e '\n\033[36m\033[2m\033[1m\033[7mSetting hostname, hosts, and MAC changer\033[0m\n'
 sudo hostnamectl set-hostname "$HOSTNAME"
 sudo cp "$DOT_FILES/static/etc_hosts" /etc/hosts
+sudo apt-get install -y macchanger
 sudo cp "$DOT_FILES/static/macchange.conf" /etc/NetworkManager/conf.d/macchange.conf
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRunning the setup scripts\033[0m\n'
