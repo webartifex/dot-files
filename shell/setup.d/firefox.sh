@@ -1,7 +1,9 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Firefox\033[0m\n'
 sudo apt-get install -y\
     firefox\
+    apparmor\
     apparmor-profiles\
+    apparmor-profiles-extra\
     apparmor-utils\
     appmenu-gtk2-module\
     appmenu-gtk3-module\
@@ -25,6 +27,8 @@ if [ -n "$SETUP_SYSTEM" ]; then
 "
     read -p "Press a key to continue ..." -n1 -r
     echo
+
+    sudo aa-enforce /etc/apparmor.d/*
 
 fi
 
