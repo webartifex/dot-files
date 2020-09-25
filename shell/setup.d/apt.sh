@@ -80,8 +80,6 @@ sudo apt-get install -y\
         texlive-xetex\
         texmaker\
         fonts-lyx\
-    thunderbird\
-        enigmail\
     tree\
     usb-creator-gtk\
     uuid\

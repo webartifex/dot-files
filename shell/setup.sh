@@ -83,6 +83,7 @@ source "$SH_SCRIPTS/setup.d/microsoft.sh"
 source "$SH_SCRIPTS/setup.d/signal.sh"
 source "$SH_SCRIPTS/setup.d/spotify.sh"
 source "$SH_SCRIPTS/setup.d/teamviewer.sh"
+source "$SH_SCRIPTS/setup.d/thunderbird.sh"
 source "$SH_SCRIPTS/setup.d/zoom.sh"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving the setup scripts\033[0m\n'

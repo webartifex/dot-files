@@ -161,6 +161,7 @@ sync-machine() {
     source "$SH_SCRIPTS/setup.d/signal.sh"
     source "$SH_SCRIPTS/setup.d/spotify.sh"
     source "$SH_SCRIPTS/setup.d/teamviewer.sh"
+    source "$SH_SCRIPTS/setup.d/thunderbird.sh"
     source "$SH_SCRIPTS/setup.d/zoom.sh"
 
     sudo --reset-timestamp
