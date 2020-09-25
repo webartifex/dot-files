@@ -75,6 +75,7 @@ source "$SH_SCRIPTS/setup.d/chromium.sh"
 source "$SH_SCRIPTS/setup.d/flameshot.sh"
 source "$SH_SCRIPTS/setup.d/signal.sh"
 source "$SH_SCRIPTS/setup.d/spotify.sh"
+source "$SH_SCRIPTS/setup.d/zoom.sh"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving the setup scripts\033[0m\n'
 rm -rf "$HOME/dot-files"

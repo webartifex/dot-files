@@ -158,6 +158,7 @@ sync-machine() {
     source "$SH_SCRIPTS/setup.d/flameshot.sh"
     source "$SH_SCRIPTS/setup.d/signal.sh"
     source "$SH_SCRIPTS/setup.d/spotify.sh"
+    source "$SH_SCRIPTS/setup.d/zoom.sh"
 
     sudo --reset-timestamp
 }
