@@ -73,6 +73,7 @@ source "$SH_SCRIPTS/setup.d/python.sh"
 source "$SH_SCRIPTS/setup.d/vpn.sh"
 source "$SH_SCRIPTS/setup.d/chromium.sh"
 source "$SH_SCRIPTS/setup.d/flameshot.sh"
+source "$SH_SCRIPTS/setup.d/signal.sh"
 source "$SH_SCRIPTS/setup.d/spotify.sh"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving the setup scripts\033[0m\n'
