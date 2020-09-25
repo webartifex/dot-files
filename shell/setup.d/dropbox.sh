@@ -14,7 +14,7 @@ wget "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_${DROPBOX_VER}
 sudo apt-get install -y ./dropbox.deb
 rm dropbox.deb
 sudo nautilus --quit
-mkdir -p "$HOME/.dropbox.synced"
+mkdir -p "$HOME/.dropbox/.sync"
 dropbox start -i >/dev/null 2>/dev/null &
 
 echo "
@@ -24,18 +24,18 @@ echo "
  - proceed in the dropbox installer
  - sign in via Firefox with credentials below
  - pause syncing
- - move Dropbox folder to ~/.dropbox.synced/Dropbox
+ - move Dropbox folder to ~/.dropbox/.sync/Dropbox
  - disable all notifications
 "
 read -p "Press a key to continue ..." -n1 -r
 echo
 
 dropbox autostart y
-dropbox exclude add "$HOME/.dropbox.synced/Dropbox/nosync"
+dropbox exclude add "$HOME/.dropbox/.sync/Dropbox/nosync"
 dropbox throttle unlimited unlimited
 dropbox lansync n
 dropbox proxy none
-ln -s "$HOME/.dropbox.synced/Dropbox/sync" dropbox
+ln -s "$HOME/.dropbox/.sync/Dropbox/sync" dropbox
 
 echo "
 |-------------------------|

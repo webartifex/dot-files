@@ -4,7 +4,7 @@ alias backup-dropbox-vault-to-storage2-vault='rsync -r -t -p -o -g -x -v --progr
 alias backup-dropbox-vault-to-storage3-vault='rsync -r -t -p -o -g -x -v --progress --delete -s /home/webartifex/vaults/dropbox-vault/ /home/webartifex/vaults/storage3-vault/backups/vault/'
 
 # decrypt/un-decrypt vaults
-alias open-dropbox-vault='gocryptfs -q -extpass "pass misc/dropbox-vault" $HOME/.dropbox.synced/Dropbox/vault/ $HOME/vaults/dropbox-vault'
+alias open-dropbox-vault='gocryptfs -q -extpass "pass misc/dropbox-vault" $HOME/.dropbox/.sync/Dropbox/vault/ $HOME/vaults/dropbox-vault'
 alias close-dropbox-vault='fusermount -q -u $HOME/vaults/dropbox-vault'
 alias open-storage1-vault='gocryptfs -q -extpass "pass misc/storage-vaults" /media/$USER/wa-Storage1/ $HOME/vaults/storage1-vault'
 alias close-storage1-vault='fusermount -q -u $HOME/vaults/storage1-vault'
