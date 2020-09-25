@@ -60,11 +60,14 @@ sudo cp "$DOT_FILES/static/sources.list" /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get autoclean -y
 
-echo -e '\n\033[36m\033[2m\033[1m\033[7mSetting hostname, hosts, and MAC changer\033[0m\n'
+echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring network settings\033[0m\n'
 sudo hostnamectl set-hostname "$HOSTNAME"
 sudo cp "$DOT_FILES/static/etc_hosts" /etc/hosts
 sudo apt-get install -y macchanger
 sudo cp "$DOT_FILES/static/macchange.conf" /etc/NetworkManager/conf.d/macchange.conf
+# Disable automated network printer search.
+sudo systemctl disable avahi-daemon
+sudo systemctl disable cups-browsed
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRunning the setup scripts\033[0m\n'
 source "$SH_SCRIPTS/utils.sh"
