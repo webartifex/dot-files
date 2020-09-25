@@ -2,14 +2,14 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Python\033[0m\n'
 
 # testresources as otherwise setuptools emits a weird warning,
 # and venv as otherwise pipx does not work.
-sudo apt-get install --no-install-recommends --yes\
+sudo apt-get install -y\
     python-is-python3\
     python3-pip\
     python3-testresources\
     python3-venv
 
 # pyenv dependencies.
-sudo apt-get install --no-install-recommends --yes\
+sudo apt-get install -y\
     build-essential\
     curl\
     git\
@@ -33,11 +33,16 @@ sudo apt-get install --no-install-recommends --yes\
     xz-utils\
     zlib1g-dev
 
+# Make put-on-path available.
+if [ -n "$SETUP_SYSTEM" ]; then
+    source "$SH_SCRIPTS/path.sh"
+fi
+
 # Create a new user-site environment with various utilities.
-[ -n "$SETUP_SYSTEM" ] && source "$SH_SCRIPTS/path.sh" && put-on-path "$HOME/.local/bin"
 python3 -m pip install --user --upgrade pip pipx setuptools virtualenv
 echo -e "\nInstalling pipx"
 rm -rf "$HOME/.local/pipx"
+put-on-path "$HOME/.local/bin"
 pipx install autoflake
 pipx install black
 pipx install bpython
@@ -88,15 +93,3 @@ pyenv rehash
 conda update -y conda
 conda install -y -c anaconda anaconda-navigator
 rm .python-version
-
-# Works after installing mackup with pipx.
-echo "
-|-------------------------------|
-| Restore dot files with mackup |
-|-------------------------------|
- - wait for Dropbox to finish syncing the dot-files folder
-"
-read -p "Press a key to continue ..." -n1 -r
-echo
-cp "$DOT_FILES/.mackup.cfg" "$HOME/.mackup.cfg"
-mackup restore -f

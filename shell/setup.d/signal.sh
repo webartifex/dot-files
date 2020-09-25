@@ -7,8 +7,8 @@ if [ -n "$SETUP_SYSTEM" ]; then
     echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
 
     sudo apt-get update
-    sudo apt-get upgrade --yes
+    sudo apt-get upgrade -y
 
 fi
 
-sudo apt-get install --no-install-recommends --yes signal-desktop
+sudo apt-get install -y signal-desktop

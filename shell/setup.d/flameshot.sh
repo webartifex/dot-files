@@ -1,6 +1,6 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling flameshot\033[0m\n'
 
-sudo apt-get install --no-install-recommends --yes\
+sudo apt-get install -y\
     flameshot\
     appmenu-gtk2-module\
     appmenu-gtk3-module

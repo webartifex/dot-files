@@ -1,5 +1,5 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Firefox\033[0m\n'
-sudo apt-get install --no-install-recommends --yes\
+sudo apt-get install -y\
     firefox\
     apparmor\
     apparmor-profiles\

@@ -1,5 +1,5 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling gnupg/pass\033[0m\n'
-sudo apt-get install --no-install-recommends --yes\
+sudo apt-get install -y\
     pass\
     gnupg\
     gpg-agent\
@@ -14,9 +14,9 @@ sudo apt-get install --no-install-recommends --yes\
 
 
 echo "
-|---------------------|
-| Configure GPG (1/2) |
-|---------------------|
+|---------------|
+| Configure GPG |
+|---------------|
  - make the public/private GPG key-pair available as
    ~/gpg/public.gpg and ~/gpg/private.gpg
  - make the ownertrust database available as
@@ -24,25 +24,12 @@ echo "
 "
 read -p "Proceed to import key pair ..." -n1 -r
 
-rm -rf "$HOME/.gnupg"
+rm -rf $HOME/.gnupg
 gpg --import "$HOME/gpg/public.gpg"
 gpg --allow-secret-key-import --import "$HOME/gpg/private.gpg"
 gpg --import-ownertrust "$HOME/gpg/trustdb.txt"
 
 echo -e "\nImported public key:"
 gpg --list-keys
-
 echo -e "\nImported private key:"
 gpg --list-secret-keys
-
-cp "$DOT_FILES/gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"
-cp "$DOT_FILES/gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
-
-echo "
-|---------------------|
-| Configure GPG (2/2) |
-|---------------------|
- - remove all files in the ~/gpg folder!
- - check if pass works on the CLI
-"
-read -p "Press a key to continue ..." -n1 -r

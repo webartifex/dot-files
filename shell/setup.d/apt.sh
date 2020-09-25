@@ -1,14 +1,14 @@
 if [ -n "$SETUP_SYSTEM" ]; then
     echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving unneeded apt packages\033[0m\n'
-    sudo apt purge --yes\
+    sudo apt purge -y\
         apport\
         popularity-contest\
         whoopsie
-    sudo apt-get autoremove --yes
+    sudo apt-get autoremove -y
 fi
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling apt packages\033[0m\n'
-sudo apt-get install --no-install-recommends --yes\
+sudo apt-get install -y\
     bat\
     bleachbit\
     calibre\
@@ -112,6 +112,7 @@ sudo rm /usr/share/applications/display-im6.q16.desktop 2>/dev/null
 sudo rm /usr/share/applications/htop.desktop 2>/dev/null
 sudo rm /usr/share/applications/im-config.desktop 2>/dev/null
 sudo rm /usr/share/applications/info.desktop 2>/dev/null
+sudo rm /usr/share/applications/isag.desktop 2>/dev/null
 sudo rm /usr/share/applications/julia.desktop 2>/dev/null
 sudo rm /usr/share/applications/libreoffice-draw.desktop 2>/dev/null
 sudo rm /usr/share/applications/libreoffice-math.desktop 2>/dev/null
@@ -132,7 +133,7 @@ sudo rm /usr/share/applications/vim.desktop 2>/dev/null
 sudo rm /usr/share/applications/yelp.desktop 2>/dev/null
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling flatpaks\033[0m\n'
-sudo apt-get install --no-install-recommends --yes flatpak
+sudo apt-get install -y flatpak
 if [ -n "$SETUP_SYSTEM" ]; then
     sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 fi

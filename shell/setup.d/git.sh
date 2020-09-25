@@ -1,5 +1,5 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling git\033[0m\n'
-sudo apt-get install --no-install-recommends --yes\
+sudo apt-get install -y\
     git\
     git-doc\
     git-flow
@@ -58,15 +58,12 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mRestoring dot files\033[0m\n'
 rm "$HOME/.bash_history" 2>/dev/null
 rm "$HOME/.bash_logout" 2>/dev/null
 rm "$HOME/.profile" 2>/dev/null
-export DOT_FILES="$REPOS/dot-files"
 cp "$DOT_FILES/.bashrc" "$HOME/.bashrc"
 cp "$DOT_FILES/.gitconfig" "$HOME/.gitconfig"
 
-export SH_SCRIPTS="$DOT_FILES/shell"
-
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling gh\033[0m\n'
 wget "https://github.com/cli/cli/releases/download/v${GH_VER}/gh_${GH_VER}_linux_amd64.deb" -O gh.deb
-sudo apt-get install --no-install-recommends --yes ./gh.deb
+sudo apt-get install -y ./gh.deb
 rm gh.deb
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling tig\033[0m\n'

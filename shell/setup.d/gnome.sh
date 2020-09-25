@@ -1,7 +1,5 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRestoring Gnome settings\033[0m\n'
-sudo apt-get install --no-install-recommends --yes\
-    dconf-cli\
-    dconf-editor
+sudo apt-get install -y dconf-cli
 
 # The wallpaper is referenced (twice) in gnome-settings.ini
 sudo cp "$DOT_FILES/static/wallpapers/beach_tropics_sea_sand_palm_trees.jpg" /usr/share/backgrounds/beach_tropics_sea_sand_palm_trees.jpg
