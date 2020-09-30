@@ -80,8 +80,8 @@ ds =           diff --color-words=. --ws-error-highlight=all --staged
 # Clean the project folder with intuitive commands
 # Always keep the .python-version file, which is also often in ~.gitignore
 clean-all =      !git reset --hard && git clean-ignored && git clean-untracked
-clean-ignored =   "!f() { if [ -f .python-version ]; then mv .python-version .python-version.tmp; fi; git clean -X -d -f "$@"; if [ -f .python-version.tmp ]; then mv .python-version.tmp .python-version; fi }; f"
-clean-untracked = !git clean -x -d -e ".python-version" -f  # The -e flag does not work with -X
+clean-ignored =   "!f() { if [ -f .python-version ]; then mv .python-version .python-version.tmp; fi; if [ -f .env ]; then mv .env .env.tmp; fi; git clean -X -d -f "$@"; if [ -f .python-version.tmp ]; then mv .python-version.tmp .python-version; fi; if [ -f .env.tmp ]; then mv .env.tmp .env; fi }; f"
+clean-untracked = !git clean -x -d -e ".python-version" -e ".env" -f  # The -e flag does not work with -X
 # Delete everything not reachable from a branch from the repository
 gc-everything = "!f() { git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc "$@"; }; f"
 # Make the logs look nice by default
