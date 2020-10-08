@@ -85,10 +85,10 @@ pyenv install 2.7.18
 pyenv install 3.5.10
 pyenv install 3.6.12
 pyenv install 3.7.9
-pyenv install 3.8.5
-pyenv install 3.9.0rc1
-pyenv install anaconda3-2020.02
-pyenv local anaconda3-2020.02
+pyenv install 3.8.6
+pyenv install 3.9.0
+pyenv install anaconda3-2020.07
+pyenv local anaconda3-2020.07
 pyenv rehash
 conda update -y conda
 conda install -y -c anaconda anaconda-navigator
