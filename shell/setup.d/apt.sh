@@ -127,7 +127,6 @@ sudo rm /usr/share/applications/org.gnome.Totem.desktop 2>/dev/null
 sudo rm /usr/share/applications/org.gnome.Weather.desktop 2>/dev/null
 sudo rm /usr/share/applications/R.desktop 2>/dev/null
 sudo rm /usr/share/applications/ranger.desktop 2>/dev/null
-sudo rm /usr/share/applications/simple-scan.desktop 2>/dev/null
 sudo rm /usr/share/applications/texdoctk.desktop 2>/dev/null
 sudo rm /usr/share/applications/vim.desktop 2>/dev/null
 sudo rm /usr/share/applications/yelp.desktop 2>/dev/null

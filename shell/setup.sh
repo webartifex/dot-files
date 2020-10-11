@@ -100,6 +100,7 @@ source "$SH_SCRIPTS/setup.d/spotify.sh"
 source "$SH_SCRIPTS/setup.d/teamviewer.sh"
 source "$SH_SCRIPTS/setup.d/thunderbird.sh"
 source "$SH_SCRIPTS/setup.d/zoom.sh"
+source "$SH_SCRIPTS/setup.d/printer.sh"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving the setup scripts\033[0m\n'
 rm -rf "$HOME/dot-files"
