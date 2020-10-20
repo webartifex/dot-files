@@ -17,13 +17,3 @@ if command-exists pyenv; then
         eval "$(pyenv virtualenv-init - | grep --invert-match 'export PATH')"
     fi
 fi
-
-# Map second keyboard for wa-WildDog.
-if [[ "$(hostname)" == "wa-WildDog" ]]; then
-    setxkbmap -device 10 -layout us
-    setxkbmap -device 11 -layout us
-    setxkbmap -device 12 -layout us
-    setxkbmap -device 13 -layout de
-    setxkbmap -device 14 -layout de
-    setxkbmap -device 15 -layout de
-fi
