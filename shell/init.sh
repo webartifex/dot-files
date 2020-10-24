@@ -17,3 +17,11 @@ if command-exists pyenv; then
         eval "$(pyenv virtualenv-init - | grep --invert-match 'export PATH')"
     fi
 fi
+
+# Configure the keyboard:
+#  - make (right) menu key the compose key, e.g., for umlauts
+#  - make caps lock a ctrl modifier and Esc key
+setxkbmap us -option 'compose:menu,caps:ctrl_modifier'
+if command-exists xcape; then
+    xcape -e "Caps_Lock=Escape"
+fi
