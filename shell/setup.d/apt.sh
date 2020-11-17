@@ -71,6 +71,7 @@ sudo apt-get install -y\
     rsync\
         grsync\
     screenfetch\
+    screenkey\
     sqlite3\
         sqlite3-doc\
         sqlitebrowser\
