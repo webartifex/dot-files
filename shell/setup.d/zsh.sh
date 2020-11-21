@@ -16,3 +16,5 @@ cd "$HOME"
 # Contains zplug configuration.
 cp "$DOT_FILES/.zshrc" "$HOME/.zshrc"
 zsh -ic "zplug install"
+# Make zsh the default logon shell
+chsh -s $(which zsh)
