@@ -21,6 +21,7 @@ sudo apt-get install -y\
     discord\
     exuberant-ctags\
     fd-find\
+    fzf\
     gimp\
         gimp-help-en\
     gnome-tweaks\

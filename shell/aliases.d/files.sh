@@ -42,6 +42,7 @@ alias tree='tree -C --dirsfirst'
 
 # Global aliases.
 if in-zsh; then
+    alias -g F='| fzf'
     alias -g G='| grep'
     alias -g H='| head'
     alias -g L='| less'
