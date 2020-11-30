@@ -73,6 +73,7 @@ sudo apt-get install -y\
         grsync\
     screenfetch\
     screenkey\
+    shellcheck\
     sqlite3\
         sqlite3-doc\
         sqlitebrowser\
