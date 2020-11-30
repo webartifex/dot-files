@@ -102,6 +102,9 @@ sudo apt-get install -y\
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling/updating iJulia\033[0m\n'
 julia --eval 'using Pkg; Pkg.add("IJulia")'
 
+# Install the tldr utility for nice and concise man pages.
+sudo npm install -g tldr
+
 # The apps and utilities listed here can either not be removed due
 # to a dependency issue with pop-shell or are used via the CLI only.
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving unneeded application launchers\033[0m\n'
