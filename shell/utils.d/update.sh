@@ -128,7 +128,7 @@ update-machine() {
 sync-dot-files() {
     update-dot-files
 
-    dot_files=('.bashrc' '.gitconfig' '.mackup.cfg' '.p10k.zsh' '.zshrc')
+    dot_files=('.bashrc' '.gitconfig' '.inputrc' '.mackup.cfg' '.p10k.zsh' '.zshrc')
     for file in ${dot_files[@]}; do
         cp "$DOT_FILES/$file" "$HOME/$file"
     done
