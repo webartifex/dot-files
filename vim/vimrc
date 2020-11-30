@@ -48,6 +48,7 @@ set wrapmargin=0
 
 " Show spelling mistakes
 " (English) in italics.
+set spelllang=en_us,de_de
 set spell
 hi clear SpellBad
 hi SpellBad cterm=italic
