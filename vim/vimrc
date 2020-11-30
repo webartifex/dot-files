@@ -1,6 +1,9 @@
 " Use VIM improved mode.
 set nocompatible
 
+" Disable VIM's startup message.
+set shortmess+=I
+
 " Set ENV variables for convenient usage.
 let $RC="$HOME/.vim/vimrc"
 let $RTP=split(&runtimepath, ',')[0]
@@ -61,6 +64,9 @@ set list
 set showmatch
 set matchpairs+=<:>
 
+" Always show the status bar at the bottom.
+set laststatus=2
+
 " Show current position in status bar.
 set ruler
 set rulerformat=%=%l/%L\ %c\ (%P)
@@ -90,6 +96,9 @@ set timeoutlen=750
 " Make <space> the <leader> in visual mode as well.
 nmap <space>  \
 vmap <space>  \
+
+" Q normally goes into Ex mode.
+nmap Q <Nop>
 
 " Enable the mouse for selections.
 " Also, allow toggling the mouse on and off.
