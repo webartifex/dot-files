@@ -21,6 +21,7 @@ sudo apt-get install -y\
     discord\
     exuberant-ctags\
     fd-find\
+    feh\
     fzf\
     gimp\
         gimp-help-en\
@@ -33,6 +34,7 @@ sudo apt-get install -y\
         hunspell-de-de\
     imagemagick\
         imagemagick-doc\
+    jq\
     julia\
         julia-doc\
     libnotify-bin\
@@ -83,6 +85,7 @@ sudo apt-get install -y\
         texlive-xetex\
         texmaker\
         fonts-lyx\
+    tmux\
     tree\
     usb-creator-gtk\
     uuid\
