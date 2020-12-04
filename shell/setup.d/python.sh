@@ -49,6 +49,7 @@ pipx install bpython
 pipx install invoke
 pipx install ipython
 pipx install isort
+pipx install line_profiler
 pipx install mackup
 pipx install nox
 pipx install pipenv
