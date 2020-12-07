@@ -51,6 +51,7 @@ pipx install ipython
 pipx install isort
 pipx install line_profiler
 pipx install mackup
+pipx install mypy
 pipx install nox
 pipx install pipenv
 pipx install pylint
