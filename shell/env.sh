@@ -16,7 +16,6 @@ export LESSHISTFILE="$HOME/.cache/.lesshst"
 export PSQLRC="$DOT_FILES/.psqlrc"
 # No need for *.pyc files on a dev machine.
 export PYTHONDONTWRITEBYTECODE=1
-export PYTHONSTARTUP="$DOT_FILES/.pythonrc"
 
 # $PATH related stuff.
 source "$SH_SCRIPTS/path.sh"
