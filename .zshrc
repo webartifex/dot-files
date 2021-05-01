@@ -28,7 +28,7 @@ bindkey -v
 setopt AUTO_CD
 
 # Try to correct the spelling of commands.
-setopt CORRECT
+setopt CORRECTALL
 
 setopt EXTENDEDGLOB
 # Warn if there are no matches.
