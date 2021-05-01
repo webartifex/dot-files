@@ -1,6 +1,22 @@
 # Send notification to Gnome.
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history | tail -n1 | sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# Check if an unknown command is in a Python venv.
+command_not_found_handle() {
+    if [ -x ".venv/bin/$1" ]; then
+        echo 'You forgot to activate the virtualenv' 1>&2
+        exe=".venv/bin/$1"
+        shift
+        "$exe" "$@"
+        return $?
+    else
+        echo "$1: command not found" 1>&2
+        return 127
+    fi
+}
+# zsh uses another name.
+command_not_found_handler() {
+    command_not_found_handle "$@"
 }
 
 # Run a DANE check against mailbox.org's IMAP/SMTP servers.
