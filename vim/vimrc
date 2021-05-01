@@ -43,6 +43,9 @@ set undodir=~/.vim/tmp/undo//
 " set noswapfile
 " set noundofile
 
+" Change the terminal's title: show the open file.
+set title
+
 " Do not wrap lines when showing text.
 set nowrap
 " This avoids a problem of loosing
@@ -51,9 +54,12 @@ set wrapmargin=0
 
 " Show spelling mistakes
 " (English) in italics.
-set spelllang=en_us,de_de
+set spelllang=en,de
 set spell
 hi clear SpellBad
+hi clear SpellCap
+hi clear SpellRare
+hi clear SpellLocal
 hi SpellBad cterm=italic
 
 " Show whitespace characters.
@@ -89,6 +95,9 @@ autocmd CursorHold * :echo
 set pastetoggle=<F2>
 set clipboard=unnamed
 
+" Make : and ; synonyms.
+nnoremap ; :
+
 " Use \ and <space> as the <leader> keys
 " and decrease time to enter key sequences.
 let mapleader='\'
@@ -98,7 +107,10 @@ nmap <space>  \
 vmap <space>  \
 
 " Q normally goes into Ex mode.
-nmap Q <Nop>
+nmap Q  <Nop>
+
+" Get sudo rights when writing a buffer with w!!.
+cnoremap w!!  w !sudo tee % >/dev/null
 
 " Enable the mouse for selections.
 " Also, allow toggling the mouse on and off.
@@ -171,7 +183,7 @@ set wildmode=longest:full,full
 " Highlight search results.
 set hlsearch
 " Shortcut to remove current highlighting.
-nnoremap <silent><leader>h  :noh<cr>
+nnoremap <silent><leader>h  :nohlsearch<cr>
 " Move cursor to result while typing immediately.
 set incsearch
 " Ignore case when searching.
@@ -230,8 +242,8 @@ vmap <c-l> <right>
 " Make <tab> (un)indent lines.
 nnoremap <tab>    >>
 nnoremap <s-tab>  <<
-inoremap <tab>    <esc>>>i
-inoremap <s-tab>  <esc><<i
+inoremap <tab>    <esc>>>
+inoremap <s-tab>  <esc><<
 vnoremap <tab>    >gv
 vnoremap <s-tab>  <gv
 
