@@ -1,13 +1,13 @@
 # Use main sources everywhere
 
-deb http://archive.ubuntu.com/ubuntu focal main universe
-deb-src http://archive.ubuntu.com/ubuntu focal main universe
+deb http://archive.ubuntu.com/ubuntu groovy main universe
+deb-src http://archive.ubuntu.com/ubuntu groovy main universe
 
-deb http://archive.ubuntu.com/ubuntu focal-security main universe
-deb-src http://archive.ubuntu.com/ubuntu focal-security main universe
+deb http://archive.ubuntu.com/ubuntu groovy-security main universe
+deb-src http://archive.ubuntu.com/ubuntu groovy-security main universe
 
-deb http://archive.ubuntu.com/ubuntu/ focal-updates main universe
-deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main universe
+deb http://archive.ubuntu.com/ubuntu/ groovy-updates main universe
+deb-src http://archive.ubuntu.com/ubuntu/ groovy-updates main universe
 
-deb http://apt.pop-os.org/proprietary focal main
-deb-src http://apt.pop-os.org/proprietary focal main
+deb http://apt.pop-os.org/proprietary groovy main
+deb-src http://apt.pop-os.org/proprietary groovy main

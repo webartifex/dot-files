@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This is an installation script to set up
-# development machines based on Pop! OS.
+# development machines based on "Pop! OS 20.10".
 
 # Name of the machine. Adjust before installation.
 export HOSTNAME="wa-Oryx"
