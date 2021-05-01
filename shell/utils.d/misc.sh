@@ -1,18 +1,6 @@
 # Send notification to Gnome.
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history | tail -n1 | sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Delete privacy relevant data stored by Chromium.
-clear-chromium() {
-    shopt -u failglob
-    rm -rf "$HOME"/.cache/chromium/*
-    rm -rf "$HOME"/.config/chromium/Default/Local\ Storage/leveldb/*
-    rm -rf "$HOME"/.config/chromium/Default/Application\ Cache/*
-    rm -rf "$HOME"/.config/chromium/Default/databases/*
-    rm -rf "$HOME"/.config/chromium/Default/File\ System/*
-    rm -rf "$HOME"/.config/chromium/Default/IndexedDB/*
-    rm -rf "$HOME"/.config/chromium/Default/Service\ Worker/*
-    shopt -s failglob
-    echo 'Cleared all privacy relevant Chromium files'
 }
 
 # Run a DANE check against mailbox.org's IMAP/SMTP servers.

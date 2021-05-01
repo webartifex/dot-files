@@ -156,7 +156,7 @@ sync-machine() {
     source "$SH_SCRIPTS/setup.d/vault_folders.sh"
     source "$SH_SCRIPTS/setup.d/python.sh"
     source "$SH_SCRIPTS/setup.d/vpn.sh"
-    source "$SH_SCRIPTS/setup.d/chromium.sh"
+    source "$SH_SCRIPTS/setup.d/chrome.sh"
     source "$SH_SCRIPTS/setup.d/exa.sh"
     source "$SH_SCRIPTS/setup.d/flameshot.sh"
     source "$SH_SCRIPTS/setup.d/microsoft.sh"
