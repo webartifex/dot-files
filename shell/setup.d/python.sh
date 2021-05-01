@@ -85,12 +85,13 @@ eval "$(pyenv virtualenv-init -)"
 # The following should be updated regularly.
 pyenv install 2.7.18
 pyenv install 3.5.10
-pyenv install 3.6.12
-pyenv install 3.7.9
-pyenv install 3.8.6
-pyenv install 3.9.0
-pyenv install anaconda3-2020.07
-pyenv local anaconda3-2020.07
+pyenv install 3.6.13
+pyenv install 3.7.10
+pyenv install 3.8.9
+pyenv install 3.9.4
+pyenv install pypy3.7-7.3.4
+pyenv install anaconda3-2020.11
+pyenv local anaconda3-2020.11
 pyenv rehash
 conda update -y conda
 conda install -y -c anaconda anaconda-navigator

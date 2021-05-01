@@ -7,6 +7,7 @@ echo "Installing Teams"
 wget "https://go.microsoft.com/fwlink/p/?linkid=2112886" -O teams.deb
 sudo apt-get install -y ./teams.deb
 rm teams.deb
+echo
 
 echo "Installing Skype"
 wget https://go.skype.com/skypeforlinux-64.deb
