@@ -63,12 +63,9 @@ git clone https://github.com/webartifex/dot-files.git
 export DOT_FILES="$HOME/dot-files"
 export SH_SCRIPTS="$DOT_FILES/shell"
 
-echo -e '\n\033[36m\033[2m\033[1m\033[7mUse main mirrors and disable reminder\033[0m\n'
+echo -e '\n\033[36m\033[2m\033[1m\033[7mDisable update reminder\033[0m\n'
 sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
-sudo cp "$DOT_FILES/static/sources.list" /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get autoclean -y
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring network settings\033[0m\n'
 sudo hostnamectl set-hostname "$HOSTNAME"
