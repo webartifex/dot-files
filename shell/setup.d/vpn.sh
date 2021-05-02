@@ -14,26 +14,30 @@ sudo apt-get install -y\
 echo -e "\nConfiguring NordVPN"
 sudo mkdir /etc/openvpn/nordvpn
 cd /etc/openvpn/nordvpn
-sudo wget https://nordvpn.com/api/files/zip
-sudo unzip -qq zip
-sudo rm zip
+# Try to download config files for some of NordVPN's servers
+sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de678.nordvpn.com.tcp443.ovpn
+sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de678.nordvpn.com.udp1194.ovpn
+sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de789.nordvpn.com.tcp443.ovpn
+sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de789.nordvpn.com.udp1194.ovpn
+sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de1001.nordvpn.com.tcp443.ovpn
+sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de1001.nordvpn.com.udp1194.ovpn
 cd "$HOME"
 # Use NordVPN's nameserve to prevent leaks
 echo "nameserver 103.86.96.100" | sudo tee -a /etc/resolvconf/resolv.conf.d/head > /dev/null
 echo "nameserver 103.86.99.100" | sudo tee -a /etc/resolvconf/resolv.conf.d/head > /dev/null
 # Try to install some of NordVPN's servers
-if [ -f /etc/openvpn/nordvpn/de666.nordvpn.com.tcp443.ovpn ]; then
-    echo "Installing NordVPN's de666 server"
-    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de666.nordvpn.com.tcp443.ovpn
-    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de666.nordvpn.com.udp1194.ovpn
-elif [ -f /etc/openvpn/nordvpn/de777.nordvpn.com.tcp443.ovpn ]; then
-    echo "Installing NordVPN's de777 server"
-    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de777.nordvpn.com.tcp443.ovpn
-    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de777.nordvpn.com.udp1194.ovpn
-elif [ -f /etc/openvpn/nordvpn/de888.nordvpn.com.tcp443.ovpn ]; then
-    echo "Installing NordVPN's de888 server"
-    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de666.nordvpn.com.tcp443.ovpn
-    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de888.nordvpn.com.udp1194.ovpn
+if [ -f /etc/openvpn/nordvpn/de678.nordvpn.com.tcp443.ovpn ]; then
+    echo "Installing NordVPN's de678 server"
+    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de678.nordvpn.com.tcp443.ovpn
+    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de678.nordvpn.com.udp1194.ovpn
+elif [ -f /etc/openvpn/nordvpn/de789.nordvpn.com.tcp443.ovpn ]; then
+    echo "Installing NordVPN's de789 server"
+    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de789.nordvpn.com.tcp443.ovpn
+    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de789.nordvpn.com.udp1194.ovpn
+elif [ -f /etc/openvpn/nordvpn/de1001.nordvpn.com.tcp443.ovpn ]; then
+    echo "Installing NordVPN's de1001 server"
+    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de1001.nordvpn.com.tcp443.ovpn
+    sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de1001.nordvpn.com.udp1194.ovpn
 else
     echo "WARNING: none of the listed NordVPN servers installed"
 fi
