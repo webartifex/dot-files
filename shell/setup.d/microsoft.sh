@@ -24,7 +24,7 @@ if [ -n "$SETUP_SYSTEM" ]; then
 |-----------------|
   - sign in with WHU account details below
 "
-    pass show university/whu.edu
+    pass show university/whu/whu.edu
     echo
     read -p "Press a key to continue ..." -n1 -r
 

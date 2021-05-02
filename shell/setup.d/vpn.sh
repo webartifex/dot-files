@@ -105,7 +105,7 @@ echo "
  - configure to start vpn when AnyConnect is started (only option)
  - connect to 212.184.196.196
 "
-pass show university/whu.edu
+pass show university/whu/whu.edu
 echo
 firefox --new-tab "https://vpn.whu.edu" &
 read -p "Press a key to continue ..." -n1 -r
