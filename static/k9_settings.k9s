@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<k9settings version="49" format="1">
+  <global>
+    <value key="animations">false</value>
+    <value key="attachmentdefaultpath">/storage/emulated/0/Download</value>
+    <value key="backgroundOperations">NEVER</value>
+    <value key="changeRegisteredNameColor">true</value>
+    <value key="confirmDelete">false</value>
+    <value key="confirmDeleteStarred">false</value>
+    <value key="confirmSpam">false</value>
+    <value key="confirmMarkAllRead">false</value>
+    <value key="countSearchMessages">false</value>
+    <value key="enableDebugLogging">false</value>
+    <value key="enableSensitiveLogging">false</value>
+    <value key="fontSizeMessageComposeInput">medium</value>
+    <value key="fontSizeMessageViewTime" />
+    <value key="gesturesEnabled">false</value>
+    <value key="hideSpecialAccounts">true</value>
+    <value key="language">default</value>
+    <value key="measureAccounts">false</value>
+    <value key="messageListCheckboxes">false</value>
+    <value key="messageListPreviewLines">2</value>
+    <value key="messageListStars">false</value>
+    <value key="messageViewFixedWidthFont">false</value>
+    <value key="messageViewReturnToList">false</value>
+    <value key="messageViewShowNext">false</value>
+    <value key="quietTimeEnabled">false</value>
+    <value key="quietTimeEnds">7:00</value>
+    <value key="quietTimeStarts">21:00</value>
+    <value key="registeredNameColor">#000cff</value>
+    <value key="showContactName">true</value>
+    <value key="showCorrespondentNames">true</value>
+    <value key="sortTypeEnum">SORT_DATE</value>
+    <value key="sortAscending">false</value>
+    <value key="startIntegratedInbox">false</value>
+    <value key="theme">dark</value>
+    <value key="messageViewTheme">use_global</value>
+    <value key="useVolumeKeysForListNavigation">false</value>
+    <value key="useVolumeKeysForNavigation">false</value>
+    <value key="wrapFolderNames">true</value>
+    <value key="notificationHideSubject">ALWAYS</value>
+    <value key="useBackgroundAsUnreadIndicator">true</value>
+    <value key="threadedView">false</value>
+    <value key="splitViewMode">NEVER</value>
+    <value key="messageComposeTheme">use_global</value>
+    <value key="fixedMessageViewTheme">true</value>
+    <value key="showContactPicture">false</value>
+    <value key="autofitWidth">true</value>
+    <value key="colorizeMissingContactPictures">true</value>
+    <value key="messageViewDeleteActionVisible">true</value>
+    <value key="messageViewArchiveActionVisible">false</value>
+    <value key="messageViewMoveActionVisible">false</value>
+    <value key="messageViewCopyActionVisible">false</value>
+    <value key="messageViewSpamActionVisible">false</value>
+    <value key="fontSizeMessageViewContentPercent">100</value>
+    <value key="hideUserAgent">true</value>
+    <value key="hideTimeZone">true</value>
+    <value key="lockScreenNotificationVisibility">NOTHING</value>
+    <value key="confirmDeleteFromNotification">false</value>
+    <value key="messageListSenderAboveSubject">true</value>
+    <value key="notificationQuickDelete">NEVER</value>
+    <value key="notificationDuringQuietTimeEnabled">true</value>
+    <value key="confirmDiscardMessage">false</value>
+    <value key="pgpInlineDialogCounter">0</value>
+    <value key="pgpSignOnlyDialogCounter">0</value>
+    <value key="openPgpProvider"></value>
+    <value key="openPgpSupportSignOnly">false</value>
+    <value key="hideHostnameWhenConnecting">true</value>
+  </global>
+  <accounts>
+    <account uuid="b0eec8f3-3071-438a-a1c7-a05af5c0d89b">
+      <name>Mailbox</name>
+      <incoming-server type="IMAP">
+        <host>imap.mailbox.org</host>
+        <port>993</port>
+        <connection-security>SSL_TLS_REQUIRED</connection-security>
+        <authentication-type>PLAIN</authentication-type>
+        <username>alexander@webartifex.biz</username>
+        <extra>
+          <value key="autoDetectNamespace">true</value>
+        </extra>
+      </incoming-server>
+      <outgoing-server type="SMTP">
+        <host>smtp.mailbox.org</host>
+        <port>465</port>
+        <connection-security>SSL_TLS_REQUIRED</connection-security>
+        <authentication-type>PLAIN</authentication-type>
+        <username>alexander@webartifex.biz</username>
+      </outgoing-server>
+      <settings>
+        <value key="allowRemoteSearch">true</value>
+        <value key="alwaysBcc"></value>
+        <value key="alwaysShowCcBcc">true</value>
+        <value key="archiveFolderName">Archive</value>
+        <value key="autoExpandFolderName">INBOX</value>
+        <value key="automaticCheckIntervalMinutes">-1</value>
+        <value key="chipColor">#ff5700</value>
+        <value key="defaultQuotedTextShown">true</value>
+        <value key="deletePolicy">DELETE</value>
+        <value key="displayCount">100</value>
+        <value key="draftsFolderName">Drafts</value>
+        <value key="expungePolicy">EXPUNGE_IMMEDIATELY</value>
+        <value key="folderDisplayMode">FIRST_CLASS</value>
+        <value key="folderNotifyNewMailMode">ALL</value>
+        <value key="folderPushMode">FIRST_CLASS</value>
+        <value key="folderSyncMode">FIRST_CLASS</value>
+        <value key="folderTargetMode">ALL</value>
+        <value key="goToUnreadMessageSearch">false</value>
+        <value key="idleRefreshMinutes">60</value>
+        <value key="inboxFolderName">INBOX</value>
+        <value key="led">false</value>
+        <value key="ledColor">#0099cc</value>
+        <value key="localStorageProvider">InternalStorage</value>
+        <value key="markMessageAsReadOnView">true</value>
+        <value key="maxPushFolders">100</value>
+        <value key="maximumAutoDownloadMessageSize">0</value>
+        <value key="maximumPolledMessageAge">14</value>
+        <value key="messageFormat">TEXT</value>
+        <value key="messageFormatAuto">true</value>
+        <value key="messageReadReceipt">false</value>
+        <value key="notifyContactsMailOnly">false</value>
+        <value key="notifyMailCheck">false</value>
+        <value key="notifyNewMail">false</value>
+        <value key="notifySelfNewMail">true</value>
+        <value key="pushPollOnConnect">true</value>
+        <value key="quotePrefix">&gt;</value>
+        <value key="quoteStyle">PREFIX</value>
+        <value key="remoteSearchFullText">false</value>
+        <value key="remoteSearchNumResults">50</value>
+        <value key="replyAfterQuote">false</value>
+        <value key="ring">true</value>
+        <value key="ringtone">content://settings/system/notification_sound</value>
+        <value key="searchableFolders">ALL</value>
+        <value key="sentFolderName">Sent</value>
+        <value key="showPicturesEnum">NEVER</value>
+        <value key="signatureBeforeQuotedText">true</value>
+        <value key="sortAscending">false</value>
+        <value key="sortTypeEnum">SORT_DATE</value>
+        <value key="spamFolderName">Junk</value>
+        <value key="stripSignature">true</value>
+        <value key="subscribedFoldersOnly">false</value>
+        <value key="syncRemoteDeletions">true</value>
+        <value key="trashFolderName">Trash</value>
+        <value key="useCompression.MOBILE">true</value>
+        <value key="useCompression.OTHER">true</value>
+        <value key="useCompression.WIFI">true</value>
+        <value key="vibrate">false</value>
+        <value key="vibratePattern">0</value>
+        <value key="vibrateTimes">5</value>
+      </settings>
+      <identities>
+        <identity>
+          <name>Alexander Hess</name>
+          <email>alexander.hess@mailbox.org</email>
+          <description>personal</description>
+          <settings>
+            <value key="signature">
+--
+Alexander Hess</value>
+            <value key="signatureUse">true</value>
+          </settings>
+        </identity>
+        <identity>
+          <name>Alexander Hess</name>
+          <email>alexander@webartifex.biz</email>
+          <description>webartifex</description>
+          <settings>
+            <value key="signature">
+--
+Alexander Hess
+
+webartifex GmbH - Data Analytics &amp; Software Solutions
+Amorbacher Straße 6, 63931 Kirchzell, Germany
+
+alexander@webartifex.biz
+I read emails once per 24 hours, usually around lunch time
+
+PGP Key Fingerprint: AB5C 0E31 9D77 350F BA6C F143 344E A5AB 10D8 68E0
+Consider encryption when writing to me, if you know how to do it
+
+www.webartifex.biz
+Get more info on my projects and background
+
+Subscribe on YOUTUBE to learn about Python, Programming, &amp; Data Science
+www.youtube.com/channel/UCgK7lVBHzeuXjvohiEXkgyA
+
+RECHTLICHE ANGABEN (LEGAL NOTICE)
+Handelsregister (Trade Register): Amtgericht Aschaffenburg, HRB 9590
+Satzungssitz (Statutory Seat): Wildenburgstraße 5, 63931 Kirchzell
+Steuernummer (Tax Number): 204/142/20933
+UStID-Nummer (VAT Number): DE204690877
+Geschäftsführer (Managing Director): Alexander Hess</value>
+            <value key="signatureUse">true</value>
+          </settings>
+        </identity>
+      </identities>
+      <folders>
+        <folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-1">
+          <value key="inTopGroup">false</value>
+          <value key="integrate">false</value>
+        </folder>
+        <folder name="Archive">
+          <value key="displayMode">NO_CLASS</value>
+          <value key="inTopGroup">false</value>
+          <value key="integrate">false</value>
+          <value key="notifyMode">NO_CLASS</value>
+          <value key="pushMode">NO_CLASS</value>
+          <value key="syncMode">NO_CLASS</value>
+        </folder>
+        <folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-1/admin">
+          <value key="inTopGroup">false</value>
+          <value key="integrate">false</value>
+        </folder>
+        <folder name="Junk">
+          <value key="displayMode">NO_CLASS</value>
+          <value key="inTopGroup">false</value>
+          <value key="integrate">false</value>
+          <value key="notifyMode">NO_CLASS</value>
+          <value key="pushMode">NO_CLASS</value>
+          <value key="syncMode">NO_CLASS</value>
+        </folder>
+        <folder name="Archive/teaching">
+          <value key="inTopGroup">false</value>
+          <value key="integrate">false</value>
+        </folder>
+        <folder name="K9MAIL_INTERNAL_OUTBOX">
+          <value key="displayMode">FIRST_CLASS</value>
+          <value key="inTopGroup">true</value>
+          <value key="integrate">true</value>
+          <value key="notifyMode">FIRST_CLASS</value>
+          <value key="pushMode">FIRST_CLASS</value>
+          <value key="syncMode">FIRST_CLASS</value>
+        </folder>
+        <folder name="Trash">
+          <value key="displayMode">FIRST_CLASS</value>
+          <value key="inTopGroup">true</value>
+          <value key="integrate">true</value>
+          <value key="notifyMode">FIRST_CLASS</value>
+          <value key="pushMode">FIRST_CLASS</value>
+          <value key="syncMode">FIRST_CLASS</value>
+        </folder>
+        <folder name="Drafts">
+          <value key="displayMode">FIRST_CLASS</value>
+          <value key="inTopGroup">true</value>
+          <value key="integrate">true</value>
+          <value key="notifyMode">FIRST_CLASS</value>
+          <value key="pushMode">FIRST_CLASS</value>
+          <value key="syncMode">FIRST_CLASS</value>
+        </folder>
+        <folder name="INBOX">
+          <value key="displayMode">FIRST_CLASS</value>
+          <value key="inTopGroup">true</value>
+          <value key="integrate">true</value>
+          <value key="notifyMode">FIRST_CLASS</value>
+          <value key="pushMode">FIRST_CLASS</value>
+          <value key="syncMode">FIRST_CLASS</value>
+        </folder>
+        <folder name="Sent">
+          <value key="displayMode">FIRST_CLASS</value>
+          <value key="inTopGroup">true</value>
+          <value key="integrate">true</value>
+          <value key="notifyMode">FIRST_CLASS</value>
+          <value key="pushMode">FIRST_CLASS</value>
+          <value key="syncMode">FIRST_CLASS</value>
+        </folder>
+      </folders>
+    </account>
+  </accounts>
+</k9settings>
