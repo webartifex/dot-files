@@ -10,9 +10,11 @@ fi
 # Initialize pyenv if it is installed.
 if command-exists pyenv; then
     if [ -z "$PYENV_SHELL" ]; then
+        eval "$(pyenv init --path)"
         eval "$(pyenv init -)"
         eval "$(pyenv virtualenv-init -)"
     else
+        eval "$(pyenv init --path)"
         eval "$(pyenv init - | grep --invert-match 'export PATH')"
         eval "$(pyenv virtualenv-init - | grep --invert-match 'export PATH')"
     fi

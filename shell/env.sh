@@ -14,6 +14,7 @@ export VISUAL=$EDITOR
 export BAT_CONFIG_PATH="$DOT_FILES/.batrc"
 export LESSHISTFILE="$HOME/.cache/.lesshst"
 export PSQLRC="$DOT_FILES/.psqlrc"
+export PYENV_ROOT="$HOME/.pyenv"
 # No need for *.pyc files on a dev machine.
 export PYTHONDONTWRITEBYTECODE=1
 
