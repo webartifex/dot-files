@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="2.0">
+  <head>
+    <title>webartifex</title>
+    <dateCreated>Tue, 18 May 2021 18:45:53 +0000</dateCreated>
+  </head>
+  <body>
+    <outline xmlUrl="http://podcast.hr-online.de/verurteilt/podcast.xml" description="" type="rss" htmlUrl="http://www.hr-inforadio.de/" title="hr-iNFO Verurteilt!" text="hr-iNFO Verurteilt!"/>
+    <outline xmlUrl="https://reifistlive.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://omr.podigee.io/feed/mp3" description="Der OMR Podcast ist der erste große Podcastkanal zu digitalem Marketing und
+allen anderen Themen, die uns Spaß machen. Philipp Westermeyer spricht im OMR
+Podcast mit Machern, Könnern und guten Freunden. Jeden Mittwoch und jeden
+zweiten Sonntag neu! Du suchst unseren OMR Education Podcast? Hier entlang:
+https://askomr.podigee.io/ Produziert von Podstars by OMR." type="rss" htmlUrl="http://www.omr.com/podcast" title="OMR Podcast" text="OMR Podcast"/>
+    <outline xmlUrl="https://anchor.fm/s/ff59240/podcast/rss" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://neuezwanziger.de/feed/mp3/" description="Die Zwanziger waren erst wild, dann golden und endeten doch düster. Und nun
+sind sie wieder da." type="rss" htmlUrl="https://neuezwanziger.de" title="Die Neuen Zwanziger" text="Die Neuen Zwanziger"/>
+    <outline xmlUrl="https://feeds.simplecast.com/54nAGcIl" description="This is what the news should sound like. The biggest stories of our time, told
+by the best journalists in the world. Hosted by Michael Barbaro. Twenty
+minutes a day, five days a week, ready by 6 a.m." type="rss" htmlUrl="https://www.nytimes.com/the-daily" title="The Daily" text="The Daily"/>
+    <outline xmlUrl="https://www.swr.de/~podcast/swr1/bw/leute-bw-podcast-100.xml" description="Bei Wolfgang Heim und Nicole Köster ist alle Welt zu Gast: Show- und
+Sportstars, Politiker, Nobelpreisträger, Wissenschaftler oder einfach Menschen
+mit einer interessanten Biografie." type="rss" htmlUrl="https://www.swr.de/swr1/bw/leute-bw-podcast-100.html" title="SWR1 Leute in Baden-Württemberg" text="SWR1 Leute in Baden-Württemberg"/>
+    <outline xmlUrl="https://feeds.lagedernation.org/feeds/ldn-mp3.xml" description="Jede Woche lassen Philip Banse und Ulf Buermeyer die politische Woche Revue
+passieren und kommentieren die Lage der Nation." type="rss" htmlUrl="https://lagedernation.org" title="Lage der Nation - der Politik-Podcast aus Berlin" text="Lage der Nation - der Politik-Podcast aus Berlin"/>
+    <outline xmlUrl="https://www1.wdr.de/mediathek/audio/wdr/maischberger-podcast/maischberger-podcast-102.podcast" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="http://www.podcastone.com/podcast?categoryID2=1237" description="The Jordan Harbinger Show (Apple's Best of 2018) is where self-motivated
+people, just like you, dig deep into the untapped wisdom of the world's
+sharpest minds- from legendary creators to intelligence operatives,
+iconoclastic writers to visionary change-makers. We bring amazing stories and
+brilliant personalities to the table, and help you demystify what they do and
+how they do it. You'll learn new strategies, perspectives, and tactics you
+won't find anywhere else, then take these valuable insights into your own life
+and live what you listen." type="rss" htmlUrl="https://www.podcastone.com/the-jordan-harbinger-show" title="The Jordan Harbinger Show" text="The Jordan Harbinger Show"/>
+    <outline xmlUrl="https://bayerninsider.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://jetztkommtscholl.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://www1.wdr.de/mediathek/audio/wdr2/joerg-thadeusz/joerg-thadeusz-108.podcast" description="Das überraschende Talk-Radio, das aus dem Rahmen fällt: Jörg Thadeusz spricht
+mit Politikern, Vordenkern, Prominenten und Hörern." type="rss" htmlUrl="https://www1.wdr.de/mediathek/audio/wdr2/joerg-thadeusz/joerg-thadeusz-108.html" title="WDR 2 Jörg Thadeusz" text="WDR 2 Jörg Thadeusz"/>
+    <outline xmlUrl="https://diewochentester.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://www.omnycontent.com/d/playlist/5ac1e950-45c7-4eb7-87c0-aa0f018441b8/454f27a0-f1b1-4d7a-99bd-abc000ffb02e/9edc8a83-e191-4bc7-8575-abc000ffb032/podcast.rss" description="Hier geht es um die großen Themen, die weltweit Schlagzeilen machen. Juan
+Moreno spricht im Auslands-Podcast wöchentlich mit den SPIEGEL-
+Korrespondentinnen und -Korrespondenten über Nachrichten und Geschichten aus
+Politik und Gesellschaft." type="rss" htmlUrl="https://www.spiegel.de/thema/podcast-acht-milliarden/" title="Acht Milliarden – Der Auslands-Podcast" text="Acht Milliarden – Der Auslands-Podcast"/>
+    <outline xmlUrl="http://www.deutschlandfunknova.de/podcast/eine-stunde-history" description="Die Beiträge zur Sendung" type="rss" htmlUrl="https://www.deutschlandfunknova.de/eine-stunde-history" title="Eine Stunde History - Deutschlandfunk Nova" text="Eine Stunde History - Deutschlandfunk Nova"/>
+    <outline xmlUrl="https://realpython.com/podcasts/rpp/feed" description="A weekly Python podcast hosted by Christopher Bailey with interviews, coding
+tips, and conversation with guests from the Python community. The show covers
+a wide range of topics including Python programming best practices, career
+tips, and related software development topics. Join us every Friday morning to
+hear what's new in the world of Python programming and become a more effective
+Pythonista." type="rss" htmlUrl="https://realpython.com/podcasts/rpp/" title="The Real Python Podcast" text="The Real Python Podcast"/>
+    <outline xmlUrl="https://bto.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://rss.art19.com/unternehmenskriege" description="Zwischen den Unternehmen herrscht Krieg. Manchmal kostet es euer Geld oder
+eure Aufmerksamkeit. Manchmal ist es nur der Triumph über die Konkurrenz. Das
+Ergebnis dieser Kämpfe beeinflusst, was wir kaufen und wie wir leben.
+
+„Kampf der Unternehmen“ bringt euch die inoffizielle, echte Geschichte
+darüber, was diese Unternehmen und ihre Chefs, Erfinder, Investoren und
+Manager zu immer neuen Höhenflügen antreibt." type="rss" htmlUrl="https://art19.com/shows/unternehmenskriege" title="Kampf der Unternehmen" text="Kampf der Unternehmen"/>
+    <outline xmlUrl="https://stefanschulz.com/talkradio/feed/audio/" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://project-a.libsyn.com/rss" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://rss.art19.com/tim-ferriss-show" description="Tim Ferriss is a self-experimenter and bestselling author, best known for The
+4-Hour Workweek, which has been translated into 40+ languages. Newsweek calls
+him &quot;the world's best human guinea pig,&quot; and The New York Times calls him &quot;a
+cross between Jack Welch and a Buddhist monk.&quot; In this show, he deconstructs
+world-class performers from eclectic areas (investing, chess, pro sports,
+etc.), digging deep to find the tools, tactics, and tricks that listeners can
+use." type="rss" htmlUrl="https://tim.blog/podcast" title="The Tim Ferriss Show" text="The Tim Ferriss Show"/>
+    <outline xmlUrl="https://feeds.megaphone.fm/ADV2256857693" description="Join intellectual phenomenon Dr. Jordan Peterson and his daughter Mikhaila for
+enlightening discourse that will change the way you think. This podcast breaks
+down the dichotomy of life through interviews and lectures that explain how
+individuals and culture are shaped by values, music, religion, and beyond. It
+will give you a new perspective and a modern understanding of your creativity,
+competence, and personality." type="rss" htmlUrl="https://www.jordanbpeterson.com" title="The Jordan B. Peterson Podcast" text="The Jordan B. Peterson Podcast"/>
+    <outline xmlUrl="https://feeds.fireside.fm/testandcode/rss" description="Test &amp; Code is a weekly podcast hosted by Brian Okken. The show covers a wide
+array of topics including software engineering, development, testing, Python
+programming, and many related topics. When we get into the implementation
+specifics, that's usually Python, such as Python packaging, tox, pytest, and
+unittest. However, well over half of the topics are language agnostic, such as
+data science, DevOps, TDD, public speaking, mentoring, feature testing, NoSQL
+databases, end to end testing, automation, continuous integration, development
+methods, Selenium, the testing pyramid, and DevOps." type="rss" htmlUrl="https://testandcode.com" title="Test &amp; Code : Python Testing for Software Engineering" text="Test &amp; Code : Python Testing for Software Engineering"/>
+    <outline xmlUrl="https://rss.art19.com/lauschangriff-endlich-was-mit-sport" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://servustv.castos.com/fleischhauer-9-minuten-netto" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://www.radioeins.de/archiv/podcast/schroeder-somuncu.xml/feed%3Dpodcast.xml" description="Zwei Titanen des gesprochenen Wortes haben sich zusammengeschlossen: Florian
+Schroeder und Serdar Somuncu sind bekannt durch ihre Meinungsfreudigkeit bei
+radioeins und im rbb-Fernseh-Programm. Einzeln sind sie schon die Wucht, aber
+im Doppel und mit geballter Kraft unterziehen sie die politisch-
+gesellschaftliche Großwetterlage einer handfesten Analyse, die man so noch nie
+gehört hat. Dabei gehen die beiden Satiriker immer einen Schritt weiter als
+die anderen und denken einen Gedanken mehr. Denn mit der einen entscheidenden
+Frage, die so nie gestellt wurde, legen sie den Finger in die Wunde. Schroeder
+&amp; Somuncu – das neue Dreamteam des Polittalks. „Schroeder &amp; Somuncu – Der
+Podcast“ wendet sich alle 14 Tage dem Wahnsinn der Republik und der ganzen
+Welt zu. Mit erbarmungsloser Härte wird bewertet, verspottet und abgeurteilt,
+was so alles schief gegangen ist in den vergangenen Tagen. Und manchmal - wenn
+es sein muss – wird auch gelobt. Politik, Promis, Sport, Boulevard – alles ist
+Thema. Aktuell, schnell und lustig. „Schroeder &amp; Somuncu“ - Ein Mainstream-
+Medien-Podcast, streng überwacht von der Bundesregierung unter direkter
+Anleitung von Bill Gates und einem Gremium von Virologen und Impffanatikern." type="rss" htmlUrl="https://www.radioeins.de/archiv/podcast/schroeder-somuncu.html" title="Schroeder &amp; Somuncu | radioeins" text="Schroeder &amp; Somuncu | radioeins"/>
+    <outline xmlUrl="http://www.deutschlandfunk.de/podcast-deutschlandfunk-der-tag.3417.de.podcast.xml" description="Die Beiträge zur Sendung" type="rss" htmlUrl="http://www.deutschlandfunk.de/" title="Deutschlandfunk - Der Tag - Deutschlandfunk" text="Deutschlandfunk - Der Tag - Deutschlandfunk"/>
+    <outline xmlUrl="https://fcbayern-podcast.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://diefalschenfragen.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://dasmorningbriefing.podigee.io/feed/mp3" description="Der Journalist und Buchautor Gabor Steingart informiert und bewertet das
+politische und wirtschaftliche Weltgeschehen – mit Scharfsinn und Sprachwitz.
+Dazu: Interviews und Korrespondentenberichte aus aller Welt." type="rss" htmlUrl="https://www.gaborsteingart.com/der-podcast/" title="Steingarts Morning Briefing – Der Podcast" text="Steingarts Morning Briefing – Der Podcast"/>
+    <outline xmlUrl="https://phrasenmaeher.podigee.io/feed/mp3" description="Phrasenmäher ist der Fußball-Podcast mit Kai Traemann. Die wichtigsten und
+interessanten Köpfe der Bundesliga im ausführlichen Gespräch. Ein Talk mit
+einer Atmosphäre irgendwo zwischen Kabine und Kamin. Informativ. Unterhaltsam.
+Hörenswert. Die Gespräche werden nicht autorisiert oder geschnitten. Einmal im
+Monat trifft Kai einen führenden Fußball-Kopf. Aus diesem Gespräch entstehen
+dann jeweils zwei Podcast-Teile. Kontakt per Mail: phrasenmaeher@bild.de oder
+kai.traemann@bild.de Kontakt per Telefon (Kai Traemann): +49 177 7751271
+https://www.bild.de/phrasenmaeher" type="rss" htmlUrl="https://www.bild.de/phrasenmaeher" title="Phrasenmäher - Fußball-Podcast mit Kai Traemann" text="Phrasenmäher - Fußball-Podcast mit Kai Traemann"/>
+    <outline xmlUrl="https://rss.acast.com/mission-money" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://www.omnycontent.com/d/playlist/5ac1e950-45c7-4eb7-87c0-aa0f018441b8/008f004b-055e-4e0c-9fd0-abc000ffb04a/3b93bc3f-52cb-4a3b-91ef-abc000ffb053/podcast.rss" description="Der Debatten-Podcast von Sascha Lobo erscheint wöchentlich sonntags und
+befasst sich mit kontroversen Themen rund um Soziale Medien,
+Überwachungstechnologie, Digitalisierung, Internet und Social Media." type="rss" htmlUrl="http://www.spiegel.de/thema/sascha_lobo_podcast/" title="Lobo – Der Debatten-Podcast" text="Lobo – Der Debatten-Podcast"/>
+    <outline xmlUrl="https://feed.alias-podcast.de/audio" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="http://www.deutschlandfunk.de/podcast-hintergrund.725.de.podcast.xml" description="Die Beiträge zur Sendung" type="rss" htmlUrl="http://www.deutschlandfunk.de/hintergrund.723.de.html" title="Hintergrund - Deutschlandfunk" text="Hintergrund - Deutschlandfunk"/>
+    <outline xmlUrl="https://lexfridman.com/feed/podcast/" description="Conversations about the nature of intelligence, science, and technology from
+the perspective of deep learning, robotics, AI, AGI, neuroscience, philosophy,
+psychology, cognitive science, economics, physics, mathematics, and more." type="rss" htmlUrl="https://lexfridman.com/podcast" title="Lex Fridman Podcast | Artificial Intelligence (AI)" text="Lex Fridman Podcast | Artificial Intelligence (AI)"/>
+    <outline xmlUrl="https://mikrooekonomen.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="https://sport1-doppelpass.podigee.io/feed/mp3" description="Sie haben den CHECK24 Doppelpass verpasst? Hier gibt es ab jetzt die
+kompletten Sendungen jede Woche als Podcast zum Nachhören." type="rss" htmlUrl="http://www.sport1.de" title="Der SPORT1 Doppelpass" text="Der SPORT1 Doppelpass"/>
+    <outline xmlUrl="http://www.jungundnaiv-podcast.de/feed/mp3/" description="Politik für Desinteressierte. Naive Interviews gepaart mit der Dokumentation
+des deutschen Regierungssprechs (BPK). Lebt von eurer finanziellen
+Unterstützung" type="rss" htmlUrl="http://www.jungundnaiv-podcast.de" title="Jung &amp; Naiv" text="Jung &amp; Naiv"/>
+    <outline xmlUrl="https://gerhardschroeder.podigee.io/feed/mp3" description="" type="rss" htmlUrl="" title="" text=""/>
+    <outline xmlUrl="http://feeds.soundcloud.com/users/soundcloud%3Ausers%3A675857786/sounds.rss" description="" type="rss" htmlUrl="" title="" text=""/>
+  </body>
+</opml>
