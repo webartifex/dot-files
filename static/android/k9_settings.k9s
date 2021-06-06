@@ -1,172 +1,1210 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<k9settings version="49" format="1">
-  <global>
-    <value key="animations">false</value>
-    <value key="attachmentdefaultpath">/storage/emulated/0/Download</value>
-    <value key="backgroundOperations">NEVER</value>
-    <value key="changeRegisteredNameColor">true</value>
-    <value key="confirmDelete">false</value>
-    <value key="confirmDeleteStarred">false</value>
-    <value key="confirmSpam">false</value>
-    <value key="confirmMarkAllRead">false</value>
-    <value key="countSearchMessages">false</value>
-    <value key="enableDebugLogging">false</value>
-    <value key="enableSensitiveLogging">false</value>
-    <value key="fontSizeMessageComposeInput">medium</value>
-    <value key="fontSizeMessageViewTime" />
-    <value key="gesturesEnabled">false</value>
-    <value key="hideSpecialAccounts">true</value>
-    <value key="language">default</value>
-    <value key="measureAccounts">false</value>
-    <value key="messageListCheckboxes">false</value>
-    <value key="messageListPreviewLines">2</value>
-    <value key="messageListStars">false</value>
-    <value key="messageViewFixedWidthFont">false</value>
-    <value key="messageViewReturnToList">false</value>
-    <value key="messageViewShowNext">false</value>
-    <value key="quietTimeEnabled">false</value>
-    <value key="quietTimeEnds">7:00</value>
-    <value key="quietTimeStarts">21:00</value>
-    <value key="registeredNameColor">#000cff</value>
-    <value key="showContactName">true</value>
-    <value key="showCorrespondentNames">true</value>
-    <value key="sortTypeEnum">SORT_DATE</value>
-    <value key="sortAscending">false</value>
-    <value key="startIntegratedInbox">false</value>
-    <value key="theme">dark</value>
-    <value key="messageViewTheme">use_global</value>
-    <value key="useVolumeKeysForListNavigation">false</value>
-    <value key="useVolumeKeysForNavigation">false</value>
-    <value key="wrapFolderNames">true</value>
-    <value key="notificationHideSubject">ALWAYS</value>
-    <value key="useBackgroundAsUnreadIndicator">true</value>
-    <value key="threadedView">false</value>
-    <value key="splitViewMode">NEVER</value>
-    <value key="messageComposeTheme">use_global</value>
-    <value key="fixedMessageViewTheme">true</value>
-    <value key="showContactPicture">false</value>
-    <value key="autofitWidth">true</value>
-    <value key="colorizeMissingContactPictures">true</value>
-    <value key="messageViewDeleteActionVisible">true</value>
-    <value key="messageViewArchiveActionVisible">false</value>
-    <value key="messageViewMoveActionVisible">false</value>
-    <value key="messageViewCopyActionVisible">false</value>
-    <value key="messageViewSpamActionVisible">false</value>
-    <value key="fontSizeMessageViewContentPercent">100</value>
-    <value key="hideUserAgent">true</value>
-    <value key="hideTimeZone">true</value>
-    <value key="lockScreenNotificationVisibility">NOTHING</value>
-    <value key="confirmDeleteFromNotification">false</value>
-    <value key="messageListSenderAboveSubject">true</value>
-    <value key="notificationQuickDelete">NEVER</value>
-    <value key="notificationDuringQuietTimeEnabled">true</value>
-    <value key="confirmDiscardMessage">false</value>
-    <value key="pgpInlineDialogCounter">0</value>
-    <value key="pgpSignOnlyDialogCounter">0</value>
-    <value key="openPgpProvider"></value>
-    <value key="openPgpSupportSignOnly">false</value>
-    <value key="hideHostnameWhenConnecting">true</value>
-  </global>
-  <accounts>
-    <account uuid="b0eec8f3-3071-438a-a1c7-a05af5c0d89b">
-      <name>Mailbox</name>
-      <incoming-server type="IMAP">
-        <host>imap.mailbox.org</host>
-        <port>993</port>
-        <connection-security>SSL_TLS_REQUIRED</connection-security>
-        <authentication-type>PLAIN</authentication-type>
-        <username>alexander@webartifex.biz</username>
-        <extra>
-          <value key="autoDetectNamespace">true</value>
-        </extra>
-      </incoming-server>
-      <outgoing-server type="SMTP">
-        <host>smtp.mailbox.org</host>
-        <port>465</port>
-        <connection-security>SSL_TLS_REQUIRED</connection-security>
-        <authentication-type>PLAIN</authentication-type>
-        <username>alexander@webartifex.biz</username>
-      </outgoing-server>
-      <settings>
-        <value key="allowRemoteSearch">true</value>
-        <value key="alwaysBcc"></value>
-        <value key="alwaysShowCcBcc">true</value>
-        <value key="archiveFolderName">Archive</value>
-        <value key="autoExpandFolderName">INBOX</value>
-        <value key="automaticCheckIntervalMinutes">-1</value>
-        <value key="chipColor">#ff5700</value>
-        <value key="defaultQuotedTextShown">true</value>
-        <value key="deletePolicy">DELETE</value>
-        <value key="displayCount">100</value>
-        <value key="draftsFolderName">Drafts</value>
-        <value key="expungePolicy">EXPUNGE_IMMEDIATELY</value>
-        <value key="folderDisplayMode">FIRST_CLASS</value>
-        <value key="folderNotifyNewMailMode">ALL</value>
-        <value key="folderPushMode">FIRST_CLASS</value>
-        <value key="folderSyncMode">FIRST_CLASS</value>
-        <value key="folderTargetMode">ALL</value>
-        <value key="goToUnreadMessageSearch">false</value>
-        <value key="idleRefreshMinutes">60</value>
-        <value key="inboxFolderName">INBOX</value>
-        <value key="led">false</value>
-        <value key="ledColor">#0099cc</value>
-        <value key="localStorageProvider">InternalStorage</value>
-        <value key="markMessageAsReadOnView">true</value>
-        <value key="maxPushFolders">100</value>
-        <value key="maximumAutoDownloadMessageSize">0</value>
-        <value key="maximumPolledMessageAge">14</value>
-        <value key="messageFormat">TEXT</value>
-        <value key="messageFormatAuto">true</value>
-        <value key="messageReadReceipt">false</value>
-        <value key="notifyContactsMailOnly">false</value>
-        <value key="notifyMailCheck">false</value>
-        <value key="notifyNewMail">false</value>
-        <value key="notifySelfNewMail">true</value>
-        <value key="pushPollOnConnect">true</value>
-        <value key="quotePrefix">&gt;</value>
-        <value key="quoteStyle">PREFIX</value>
-        <value key="remoteSearchFullText">false</value>
-        <value key="remoteSearchNumResults">50</value>
-        <value key="replyAfterQuote">false</value>
-        <value key="ring">true</value>
-        <value key="ringtone">content://settings/system/notification_sound</value>
-        <value key="searchableFolders">ALL</value>
-        <value key="sentFolderName">Sent</value>
-        <value key="showPicturesEnum">NEVER</value>
-        <value key="signatureBeforeQuotedText">true</value>
-        <value key="sortAscending">false</value>
-        <value key="sortTypeEnum">SORT_DATE</value>
-        <value key="spamFolderName">Junk</value>
-        <value key="stripSignature">true</value>
-        <value key="subscribedFoldersOnly">false</value>
-        <value key="syncRemoteDeletions">true</value>
-        <value key="trashFolderName">Trash</value>
-        <value key="useCompression.MOBILE">true</value>
-        <value key="useCompression.OTHER">true</value>
-        <value key="useCompression.WIFI">true</value>
-        <value key="vibrate">false</value>
-        <value key="vibratePattern">0</value>
-        <value key="vibrateTimes">5</value>
-      </settings>
-      <identities>
-        <identity>
-          <name>Alexander Hess</name>
-          <email>alexander.hess@mailbox.org</email>
-          <description>personal</description>
-          <settings>
-            <value key="signature">
---
+<k9settings format="1" version="69">
+	<accounts>
+		<account uuid="19fbd8ea-6f2f-49fa-b030-2cfe630506f5">
+			<folders>
+				<folder name="Archive">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-2/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-2/session-01">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-2/session-02">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-2/session-03">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-2/session-04">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/session-01">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/session-02">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/session-03">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/session-04">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/session-05">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/session-06">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/dhbw-hn/ipp-wi-2020-1/session-07">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/groups">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/guest-lecture">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/week-01">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/week-02">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/week-03">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/week-04">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/week-05">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-bsc-2021-1/week-06">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2020-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/groups">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/week-01">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/week-02">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/week-03">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/week-04">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/week-05">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/ebs/ipp-msc-2021-1/week-06">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2020-04-20">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2020-06-09">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2020-07-06">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2020-07-13">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2020-07-20">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2020-10-05">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2021-03-15">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/dlr-2021-05-26">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/python-academy/pandas-2020-11-18-cancelled">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2019-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2019-1/assignments">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2019-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2019-2/guest-lecture">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-1/guest-lecture">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-1/registration">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/group-01">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/group-02">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/group-03">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/group-04">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/group-05">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/group-06">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2020-2/group-07">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/groups">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/week-01">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/week-02">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/week-03">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/week-04">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/week-05">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-2021-1/week-06">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2020-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2020-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2020-1/guest-lecture">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2020-1/registration">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2020-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2020-2/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-bsc-bootcamp-2021-1/registration">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-mba-2020-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-mba-2020-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-mba-2020-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-mba-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/teaching/whu/ipp-mba-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/cbs">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/ebs">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/ebs/tutoring">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/elementary">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/mit">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/nyu">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/whu">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/whu/msc">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/university/whu/phd">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/work">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/work/artace">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/work/gymondo">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/work/juvalia">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Archive/work/larrys-list">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">false</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Drafts">
+					<value key="displayMode">FIRST_CLASS</value>
+					<value key="integrate">true</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">FIRST_CLASS</value>
+					<value key="pushMode">FIRST_CLASS</value>
+					<value key="syncMode">FIRST_CLASS</value>
+				</folder>
+				<folder name="INBOX">
+					<value key="displayMode">FIRST_CLASS</value>
+					<value key="integrate">true</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">FIRST_CLASS</value>
+					<value key="pushMode">FIRST_CLASS</value>
+					<value key="syncMode">FIRST_CLASS</value>
+				</folder>
+				<folder name="INBOX/consumption">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/app-wi-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/app-wi-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/app-wi-2021-1/alpha">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/app-wi-2021-1/beta">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/app-wi-2021-1/groups">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/idb-wi-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/idb-wi-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/ipp-dlm-2021-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/ipp-dlm-2021-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/dhbw-hn/thesis">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/ebs">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/ebs/ipp-msc-2021-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/ebs/ipp-msc-2021-2/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/family-n-friends">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/family-n-friends/hess-group">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/liberals">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/personal-finance">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/personal-finance/freelance">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/python-academy">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/python-academy/dlr-2021-06-07">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/python-academy/dlr-2021-06-16">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/python-academy/dlr-2021-06-21">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/webartifex">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/webartifex/accounting">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/imc">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-bsc-2021-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-bsc-2021-2/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-mba-2021-2">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-mba-2021-2/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-mba-2021-3">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-mba-2021-3/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-mba-2022-1">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="INBOX/whu/ipp-mba-2022-1/admin">
+					<value key="displayMode">SECOND_CLASS</value>
+					<value key="integrate">false</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">SECOND_CLASS</value>
+					<value key="pushMode">SECOND_CLASS</value>
+					<value key="syncMode">SECOND_CLASS</value>
+				</folder>
+				<folder name="Junk">
+					<value key="displayMode">FIRST_CLASS</value>
+					<value key="integrate">true</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">FIRST_CLASS</value>
+					<value key="pushMode">FIRST_CLASS</value>
+					<value key="syncMode">FIRST_CLASS</value>
+				</folder>
+				<folder name="Sent">
+					<value key="displayMode">FIRST_CLASS</value>
+					<value key="integrate">true</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">FIRST_CLASS</value>
+					<value key="pushMode">FIRST_CLASS</value>
+					<value key="syncMode">FIRST_CLASS</value>
+				</folder>
+				<folder name="Trash">
+					<value key="displayMode">FIRST_CLASS</value>
+					<value key="integrate">true</value>
+					<value key="inTopGroup">true</value>
+					<value key="notifyMode">FIRST_CLASS</value>
+					<value key="pushMode">FIRST_CLASS</value>
+					<value key="syncMode">FIRST_CLASS</value>
+				</folder>
+			</folders>
+			<identities>
+				<identity>
+					<description>personal</description>
+					<email>alexander.hess@mailbox.org</email>
+					<name>Alexander Hess</name>
+					<settings>
+						<value key="signature">--
 Alexander Hess</value>
-            <value key="signatureUse">true</value>
-          </settings>
-        </identity>
-        <identity>
-          <name>Alexander Hess</name>
-          <email>alexander@webartifex.biz</email>
-          <description>webartifex</description>
-          <settings>
-            <value key="signature">
---
+						<value key="signatureUse">true</value>
+					</settings>
+				</identity>
+				<identity>
+					<description>webartifex</description>
+					<email>alexander@webartifex.biz</email>
+					<name>Alexander Hess</name>
+					<settings>
+						<value key="signature">--
 Alexander Hess
 
 webartifex GmbH - Data Analytics &amp; Software Solutions
@@ -190,80 +1228,160 @@ Satzungssitz (Statutory Seat): Wildenburgstraße 5, 63931 Kirchzell
 Steuernummer (Tax Number): 204/142/20933
 UStID-Nummer (VAT Number): DE204690877
 Geschäftsführer (Managing Director): Alexander Hess</value>
-            <value key="signatureUse">true</value>
-          </settings>
-        </identity>
-      </identities>
-      <folders>
-        <folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-1">
-          <value key="inTopGroup">false</value>
-          <value key="integrate">false</value>
-        </folder>
-        <folder name="Archive">
-          <value key="displayMode">NO_CLASS</value>
-          <value key="inTopGroup">false</value>
-          <value key="integrate">false</value>
-          <value key="notifyMode">NO_CLASS</value>
-          <value key="pushMode">NO_CLASS</value>
-          <value key="syncMode">NO_CLASS</value>
-        </folder>
-        <folder name="Archive/teaching/dhbw-hn/ipp-dcm-2020-1/admin">
-          <value key="inTopGroup">false</value>
-          <value key="integrate">false</value>
-        </folder>
-        <folder name="Junk">
-          <value key="displayMode">NO_CLASS</value>
-          <value key="inTopGroup">false</value>
-          <value key="integrate">false</value>
-          <value key="notifyMode">NO_CLASS</value>
-          <value key="pushMode">NO_CLASS</value>
-          <value key="syncMode">NO_CLASS</value>
-        </folder>
-        <folder name="Archive/teaching">
-          <value key="inTopGroup">false</value>
-          <value key="integrate">false</value>
-        </folder>
-        <folder name="K9MAIL_INTERNAL_OUTBOX">
-          <value key="displayMode">FIRST_CLASS</value>
-          <value key="inTopGroup">true</value>
-          <value key="integrate">true</value>
-          <value key="notifyMode">FIRST_CLASS</value>
-          <value key="pushMode">FIRST_CLASS</value>
-          <value key="syncMode">FIRST_CLASS</value>
-        </folder>
-        <folder name="Trash">
-          <value key="displayMode">FIRST_CLASS</value>
-          <value key="inTopGroup">true</value>
-          <value key="integrate">true</value>
-          <value key="notifyMode">FIRST_CLASS</value>
-          <value key="pushMode">FIRST_CLASS</value>
-          <value key="syncMode">FIRST_CLASS</value>
-        </folder>
-        <folder name="Drafts">
-          <value key="displayMode">FIRST_CLASS</value>
-          <value key="inTopGroup">true</value>
-          <value key="integrate">true</value>
-          <value key="notifyMode">FIRST_CLASS</value>
-          <value key="pushMode">FIRST_CLASS</value>
-          <value key="syncMode">FIRST_CLASS</value>
-        </folder>
-        <folder name="INBOX">
-          <value key="displayMode">FIRST_CLASS</value>
-          <value key="inTopGroup">true</value>
-          <value key="integrate">true</value>
-          <value key="notifyMode">FIRST_CLASS</value>
-          <value key="pushMode">FIRST_CLASS</value>
-          <value key="syncMode">FIRST_CLASS</value>
-        </folder>
-        <folder name="Sent">
-          <value key="displayMode">FIRST_CLASS</value>
-          <value key="inTopGroup">true</value>
-          <value key="integrate">true</value>
-          <value key="notifyMode">FIRST_CLASS</value>
-          <value key="pushMode">FIRST_CLASS</value>
-          <value key="syncMode">FIRST_CLASS</value>
-        </folder>
-      </folders>
-    </account>
-  </accounts>
+						<value key="signatureUse">true</value>
+					</settings>
+				</identity>
+			</identities>
+			<incoming-server type="IMAP">
+				<authentication-type>PLAIN</authentication-type>
+				<connection-security>SSL_TLS_REQUIRED</connection-security>
+				<extra>
+					<value key="autoDetectNamespace">true</value>
+					<value key="pathPrefix"/>
+				</extra>
+				<host>imap.mailbox.org</host>
+				<port>993</port>
+				<username>alexander@webartifex.biz</username>
+			</incoming-server>
+			<name>mailbox.org</name>
+			<outgoing-server type="SMTP">
+				<authentication-type>PLAIN</authentication-type>
+				<connection-security>SSL_TLS_REQUIRED</connection-security>
+				<host>smtp.mailbox.org</host>
+				<port>465</port>
+				<username>alexander@webartifex.biz</username>
+			</outgoing-server>
+			<settings>
+				<value key="allowRemoteSearch">true</value>
+				<value key="alwaysBcc"/>
+				<value key="alwaysShowCcBcc">true</value>
+				<value key="archiveFolderName">Archive</value>
+				<value key="archiveFolderSelection">MANUAL</value>
+				<value key="autocryptMutualMode">false</value>
+				<value key="autoExpandFolderName">INBOX</value>
+				<value key="automaticCheckIntervalMinutes">15</value>
+				<value key="chipColor">#ff5700</value>
+				<value key="defaultQuotedTextShown">true</value>
+				<value key="deletePolicy">DELETE</value>
+				<value key="displayCount">100</value>
+				<value key="draftsFolderName">Drafts</value>
+				<value key="draftsFolderSelection">MANUAL</value>
+				<value key="expungePolicy">EXPUNGE_IMMEDIATELY</value>
+				<value key="folderDisplayMode">ALL</value>
+				<value key="folderNotifyNewMailMode">ALL</value>
+				<value key="folderPushMode">FIRST_AND_SECOND_CLASS</value>
+				<value key="folderSyncMode">FIRST_AND_SECOND_CLASS</value>
+				<value key="folderTargetMode">ALL</value>
+				<value key="goToUnreadMessageSearch">false</value>
+				<value key="idleRefreshMinutes">12</value>
+				<value key="led">false</value>
+				<value key="ledColor">#0099cc</value>
+				<value key="localStorageProvider">InternalStorage</value>
+				<value key="markMessageAsReadOnDelete">true</value>
+				<value key="markMessageAsReadOnView">true</value>
+				<value key="maximumAutoDownloadMessageSize">0</value>
+				<value key="maximumPolledMessageAge">28</value>
+				<value key="maxPushFolders">10</value>
+				<value key="messageFormat">TEXT</value>
+				<value key="messageFormatAuto">true</value>
+				<value key="messageReadReceipt">false</value>
+				<value key="notifyContactsMailOnly">false</value>
+				<value key="notifyMailCheck">false</value>
+				<value key="notifyNewMail">false</value>
+				<value key="notifySelfNewMail">true</value>
+				<value key="openPgpEncryptAllDrafts">true</value>
+				<value key="openPgpEncryptSubject">true</value>
+				<value key="openPgpHideSignOnly">true</value>
+				<value key="pushPollOnConnect">true</value>
+				<value key="quotePrefix">&gt;</value>
+				<value key="quoteStyle">PREFIX</value>
+				<value key="remoteSearchFullText">false</value>
+				<value key="remoteSearchNumResults">50</value>
+				<value key="replyAfterQuote">false</value>
+				<value key="ring">false</value>
+				<value key="ringtone">content://settings/system/notification_sound</value>
+				<value key="searchableFolders">ALL</value>
+				<value key="sentFolderName">Sent</value>
+				<value key="sentFolderSelection">MANUAL</value>
+				<value key="showPicturesEnum">NEVER</value>
+				<value key="signatureBeforeQuotedText">true</value>
+				<value key="sortAscending">false</value>
+				<value key="sortTypeEnum">SORT_DATE</value>
+				<value key="spamFolderName">Junk</value>
+				<value key="spamFolderSelection">MANUAL</value>
+				<value key="stripSignature">true</value>
+				<value key="subscribedFoldersOnly">false</value>
+				<value key="syncRemoteDeletions">true</value>
+				<value key="trashFolderName">Trash</value>
+				<value key="trashFolderSelection">MANUAL</value>
+				<value key="uploadSentMessages">true</value>
+				<value key="useCompression.MOBILE">true</value>
+				<value key="useCompression.OTHER">true</value>
+				<value key="useCompression.WIFI">true</value>
+				<value key="vibrate">false</value>
+				<value key="vibratePattern">0</value>
+				<value key="vibrateTimes">0</value>
+			</settings>
+		</account>
+	</accounts>
+	<global>
+		<value key="animations">false</value>
+		<value key="attachmentdefaultpath">/storage/emulated/0/Downloads</value>
+		<value key="autofitWidth">true</value>
+		<value key="backgroundOperations">NEVER</value>
+		<value key="changeRegisteredNameColor">true</value>
+		<value key="colorizeMissingContactPictures">true</value>
+		<value key="confirmDelete">false</value>
+		<value key="confirmDeleteFromNotification">true</value>
+		<value key="confirmDeleteStarred">false</value>
+		<value key="confirmDiscardMessage">true</value>
+		<value key="confirmMarkAllRead">true</value>
+		<value key="confirmSpam">false</value>
+		<value key="enableDebugLogging">false</value>
+		<value key="enableSensitiveLogging">false</value>
+		<value key="fixedMessageViewTheme">true</value>
+		<value key="fontSizeMessageComposeInput">medium</value>
+		<value key="fontSizeMessageViewContentPercent">100</value>
+		<value key="fontSizeMessageViewTime"/>
+		<value key="gesturesEnabled">false</value>
+		<value key="hideSpecialAccounts">true</value>
+		<value key="hideTimeZone">true</value>
+		<value key="hideUserAgent">true</value>
+		<value key="language">en</value>
+		<value key="lockScreenNotificationVisibility">NOTHING</value>
+		<value key="messageComposeTheme">dark</value>
+		<value key="messageListPreviewLines">2</value>
+		<value key="messageListSenderAboveSubject">true</value>
+		<value key="messageListStars">false</value>
+		<value key="messageViewArchiveActionVisible">false</value>
+		<value key="messageViewCopyActionVisible">false</value>
+		<value key="messageViewDeleteActionVisible">true</value>
+		<value key="messageViewFixedWidthFont">false</value>
+		<value key="messageViewMoveActionVisible">true</value>
+		<value key="messageViewReturnToList">false</value>
+		<value key="messageViewShowNext">false</value>
+		<value key="messageViewSpamActionVisible">false</value>
+		<value key="messageViewTheme">dark</value>
+		<value key="notificationDuringQuietTimeEnabled">true</value>
+		<value key="notificationHideSubject">ALWAYS</value>
+		<value key="notificationQuickDelete">NEVER</value>
+		<value key="pgpInlineDialogCounter">0</value>
+		<value key="pgpSignOnlyDialogCounter">0</value>
+		<value key="quietTimeEnabled">false</value>
+		<value key="quietTimeEnds">7:00</value>
+		<value key="quietTimeStarts">21:00</value>
+		<value key="registeredNameColor">#0031ff</value>
+		<value key="showContactName">true</value>
+		<value key="showContactPicture">false</value>
+		<value key="showCorrespondentNames">true</value>
+		<value key="showUnifiedInbox">false</value>
+		<value key="sortAscending">false</value>
+		<value key="sortTypeEnum">SORT_DATE</value>
+		<value key="splitViewMode">WHEN_IN_LANDSCAPE</value>
+		<value key="theme">dark</value>
+		<value key="threadedView">false</value>
+		<value key="useBackgroundAsUnreadIndicator">true</value>
+		<value key="useVolumeKeysForListNavigation">false</value>
+		<value key="useVolumeKeysForNavigation">false</value>
+	</global>
 </k9settings>
