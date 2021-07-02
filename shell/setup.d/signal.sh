@@ -4,7 +4,7 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Signal\033[0m\n'
 if [ -n "$SETUP_SYSTEM" ]; then
 
     curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-    echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+    echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal.list
 
     sudo apt-get update
     sudo apt-get upgrade -y

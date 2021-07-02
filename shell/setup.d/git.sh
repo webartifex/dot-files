@@ -10,8 +10,8 @@ sudo apt-get install -y\
 
 
 EMAIL="alexander@webartifex.biz"
-GH_VER="1.9.2"  # -> https://github.com/cli/cli/releases/
-TIG_VER="2.5.3"  # -> https://github.com/jonas/tig/releases/
+GH_VER="1.12.1"  # -> https://github.com/cli/cli/releases/
+TIG_VER="2.5.4"  # -> https://github.com/jonas/tig/releases/
 
 
 echo "
@@ -45,6 +45,7 @@ cd "$REPOS"
 git clone git@github.com:webartifex/ames-housing.git
 git clone git@github.com:webartifex/collectartworks.git
 git clone git@github.com:webartifex/dot-files.git
+git clone git@github.com:webartifex/intro-to-data-science.git
 git clone git@github.com:webartifex/intro-to-python.git
 git clone git@github.com:webartifex/lalib.git
 git clone git@github.com:webartifex/tidy-data.git

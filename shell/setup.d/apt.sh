@@ -1,9 +1,7 @@
 if [ -n "$SETUP_SYSTEM" ]; then
     echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving unneeded apt packages\033[0m\n'
     sudo apt purge -y\
-        apport\
-        popularity-contest\
-        whoopsie
+        apport
     sudo apt-get autoremove -y
 fi
 

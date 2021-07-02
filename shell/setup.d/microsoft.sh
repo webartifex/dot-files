@@ -12,6 +12,7 @@ echo
 echo "Installing Skype"
 wget https://go.skype.com/skypeforlinux-64.deb
 sudo apt-get install -y ./skypeforlinux-64.deb
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1F3045A5DF7587C3
 rm skypeforlinux-64.deb
 
 

@@ -21,6 +21,7 @@ sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de789.
 sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de789.nordvpn.com.udp1194.ovpn
 sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de1001.nordvpn.com.tcp443.ovpn
 sudo wget https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de1001.nordvpn.com.udp1194.ovpn
+
 cd "$HOME"
 # Use NordVPN's nameserve to prevent leaks
 echo "nameserver 103.86.96.100" | sudo tee -a /etc/resolvconf/resolv.conf.d/head > /dev/null

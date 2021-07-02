@@ -7,8 +7,7 @@ DROPBOX_VER="2020.03.04"  # -> https://www.dropbox.com/download?dl=packages/ubun
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Dropbox\033[0m\n'
 sudo apt-get install -y\
-    python3-gpg\
-    qt5-default
+    python3-gpg
 cd "$HOME"
 wget "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_${DROPBOX_VER}_amd64.deb" -O dropbox.deb
 sudo apt-get install -y ./dropbox.deb

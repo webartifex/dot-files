@@ -32,7 +32,7 @@ echo "
 |-----------------|
  - create bookmarks for repo folder and important repos in Nautilus
  - rename old bookmarks in Nautilus
- - remove Pop! OS and firmware upgrade checker from startup applications
+ - remove Flatpack Transition, Pop! OS, and firmware upgrade checker from startup applications
 "
 read -p "Press a key to continue ..." -n1 -r
 
