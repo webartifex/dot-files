@@ -61,6 +61,11 @@ echo "
 "
 read -p "Press a key to continue ..." -n1 -r
 
+# Put the ~/downloads folder into Dropbox.
+cd "$HOME"
+rm -rf $HOME/downloads
+ln -s "$HOME/.dropbox/.sync/Dropbox/sync/tmp/downloads" downloads
+
 # Works after installing mackup with pipx.
 cp "$DOT_FILES/.mackup.cfg" "$HOME/.mackup.cfg"
 mackup restore -f
