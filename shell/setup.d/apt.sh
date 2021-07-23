@@ -85,6 +85,10 @@ sudo apt-get install -y\
         fonts-lyx\
     tmux\
     tree\
+    ttf-mscorefonts-installer\
+        ttf-anonymous-pro\
+        ttf-ubuntu-font-family\
+        ttf-unifont\
     usb-creator-gtk\
     uuid\
     xclip\
@@ -151,3 +155,6 @@ if [ -n "$SETUP_SYSTEM" ]; then
     mkdir -p "$HOME/.vim/tmp/swap"
     mkdir -p "$HOME/.vim/tmp/undo"
 fi
+
+# Update the font cache.
+sudo fc-cache -f -v
