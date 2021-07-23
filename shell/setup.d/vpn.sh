@@ -31,16 +31,16 @@ if [ -f /etc/openvpn/nordvpn/de678.nordvpn.com.tcp443.ovpn ]; then
     echo "Installing NordVPN's de678 server"
     sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de678.nordvpn.com.tcp443.ovpn
     sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de678.nordvpn.com.udp1194.ovpn
-elif [ -f /etc/openvpn/nordvpn/de789.nordvpn.com.tcp443.ovpn ]; then
+fi
+if [ -f /etc/openvpn/nordvpn/de789.nordvpn.com.tcp443.ovpn ]; then
     echo "Installing NordVPN's de789 server"
     sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de789.nordvpn.com.tcp443.ovpn
     sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de789.nordvpn.com.udp1194.ovpn
-elif [ -f /etc/openvpn/nordvpn/de1001.nordvpn.com.tcp443.ovpn ]; then
+fi
+if [ -f /etc/openvpn/nordvpn/de1001.nordvpn.com.tcp443.ovpn ]; then
     echo "Installing NordVPN's de1001 server"
     sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de1001.nordvpn.com.tcp443.ovpn
     sudo nmcli connection import type openvpn file /etc/openvpn/nordvpn/de1001.nordvpn.com.udp1194.ovpn
-else
-    echo "WARNING: none of the listed NordVPN servers installed"
 fi
 
 echo "
