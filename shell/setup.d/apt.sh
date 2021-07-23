@@ -144,3 +144,10 @@ sudo apt-get install -y flatpak
 if [ -n "$SETUP_SYSTEM" ]; then
     sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 fi
+
+echo -e '\n\033[36m\033[2m\033[1m\033[7mCreating VIM tmp folders\033[0m\n'
+if [ -n "$SETUP_SYSTEM" ]; then
+    mkdir -p "$HOME/.vim/tmp/backup"
+    mkdir -p "$HOME/.vim/tmp/swap"
+    mkdir -p "$HOME/.vim/tmp/undo"
+fi
