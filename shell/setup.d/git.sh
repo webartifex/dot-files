@@ -50,6 +50,7 @@ git clone git@github.com:webartifex/intro-to-python.git
 git clone git@github.com:webartifex/lalib.git
 git clone git@github.com:webartifex/tidy-data.git
 git clone git@github.com:webartifex/urban-meal-delivery.git
+git clone git@github.com:webartifex/urban-meal-delivery-demand-forecasting.git
 git clone git@github.com:webartifex/webartifex.git
 git clone git@github.com:webartifex/workshop-machine-learning-for-beginners.git
 cd "$HOME"
