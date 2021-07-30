@@ -84,6 +84,8 @@ sudo apt-get install -y\
         texmaker\
         fonts-lyx\
     tmux\
+    tor\
+        torbrowser-launcher\
     tree\
     ttf-mscorefonts-installer\
         ttf-anonymous-pro\
