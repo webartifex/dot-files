@@ -1,1 +1,30 @@
+-- At startup, psql executes commands from psqlrc,
+-- which creates unnecessary output. To hide it,
+-- set a flag here and unset it at the bottom.
+\set QUIET 1
+
+-- Show werbose error messages.
+\set VERBOSITY verbose
+
+-- Use table format by default but switch to
+-- expanded table format when there's a lot of data.
+\x auto
+
+-- By default, NULLs show up as empty spaces.
+\pset null 'NULL'
+
+-- Ignore errors in interactive sessions
+-- but not when reading script files.
+\set ON_ERROR_ROLLBACK interactive
+
+\set COMP_KEYWORD_CASE upper
+\set EDITOR vi
+
+-- Use a separate history file per database.
 \set HISTFILE ~/.cache/.psql_history- :DBNAME
+\set HISTCONTROL ignoredups
+
+-- Make all queries display query times.
+\timing
+
+\unset QUIET
