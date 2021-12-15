@@ -70,7 +70,7 @@ cd "$HOME"
 echo -e "\nInstalling poetry"
 # Note: This must be done here "globally." Installing poetry with,
 # for example, pipx results in poetry not integrating well with pyenv.
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+curl -sSL https://install.python-poetry.org | python
 put-on-path "$HOME/.poetry/bin"
 poetry -V
 eval "$(poetry completions bash)"
@@ -85,11 +85,13 @@ eval "$(pyenv virtualenv-init -)"
 # The following should be updated regularly.
 pyenv install 2.7.18
 pyenv install 3.5.10
-pyenv install 3.6.14
-pyenv install 3.7.11
-pyenv install 3.8.11
-pyenv install 3.9.6
-pyenv install pypy3.7-7.3.5
+pyenv install 3.6.15
+pyenv install 3.7.12
+pyenv install 3.8.12
+pyenv install 3.9.9
+pyenv install 3.10.1
+pyenv install pypy3.7-7.3.7
+pyenv install pypy3.8-7.3.7
 pyenv install anaconda3-2021.05
 pyenv local anaconda3-2021.05
 pyenv rehash

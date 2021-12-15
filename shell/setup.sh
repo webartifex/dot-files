@@ -4,7 +4,7 @@
 # development machines based on "Pop! OS 20.10".
 
 # Name of the machine. Adjust before installation.
-export HOSTNAME="wa-Oryx"
+export HOSTNAME="wa-X1"
 
 # Some sourced *.sh scripts behave different during installation and update.
 export SETUP_SYSTEM="true"

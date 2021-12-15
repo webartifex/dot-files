@@ -78,7 +78,6 @@ sudo apt-get install -y\
         sqlite3-doc\
         sqlitebrowser\
     synaptic\
-    telegram-desktop\
     texlive\
         texlive-xetex\
         texmaker\
@@ -97,6 +96,7 @@ sudo apt-get install -y\
     ufw\
         gufw\
     usbguard\
+    v4l-utils\
     vim\
         vim-doc\
         vim-julia\

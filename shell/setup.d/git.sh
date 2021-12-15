@@ -10,7 +10,7 @@ sudo apt-get install -y\
 
 
 EMAIL="alexander@webartifex.biz"
-GH_VER="1.12.1"  # -> https://github.com/cli/cli/releases/
+GH_VER="2.3.0"  # -> https://github.com/cli/cli/releases/
 TIG_VER="2.5.4"  # -> https://github.com/jonas/tig/releases/
 
 
