@@ -78,6 +78,7 @@ sudo apt-get install -y\
         sqlite3-doc\
         sqlitebrowser\
     synaptic\
+    system76-keyboard-configurator\
     texlive\
         texlive-xetex\
         texmaker\
