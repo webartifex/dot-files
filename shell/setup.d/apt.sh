@@ -71,6 +71,8 @@ sudo apt-get install -y\
     ranger\
     rsync\
         grsync\
+    smbclient\
+        cifs-utils\
     screenfetch\
     screenkey\
     shellcheck\
