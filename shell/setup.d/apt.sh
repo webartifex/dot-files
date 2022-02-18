@@ -55,6 +55,7 @@ sudo apt-get install -y\
     htop\
     libpam-tmpdir\
     locales-all\
+    nmap\
     pandoc\
     pavucontrol\
     postgresql\
