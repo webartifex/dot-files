@@ -23,6 +23,7 @@ if [ -n "$SETUP_SYSTEM" ]; then
  - log out and back in -> ensure no devices are sharing logins
  - change device name in sync settings
  - sync the Gnome Shell extensions
+ - optionally, restart Gnome
  - close/restart browser
 "
     read -p "Press a key to continue ..." -n1 -r

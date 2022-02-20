@@ -17,7 +17,6 @@ if [ -n "$SETUP_SYSTEM" ]; then
 |----------------------|
 | Configure TeamViewer |
 |----------------------|
- - start with system if workstation
  - assign device to account with credentials shown below
  - set pass password for unattended access
  - disable TeamViewer shutdown if workstation

@@ -1,7 +1,6 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling zsh\033[0m\n'
 sudo apt-get install -y\
-    zsh\
-    zsh-doc
+    zsh
 
 
 # Lines below this are only executed during installation.

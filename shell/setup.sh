@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # This is an installation script to set up
-# development machines based on "Pop! OS 20.10".
+# development machines based on "Pop! OS 21.10".
 
 # Name of the machine. Adjust before installation.
-export HOSTNAME="wa-X1"
+export HOSTNAME="CHANGE-ME"
 
 # Some sourced *.sh scripts behave different during installation and update.
 export SETUP_SYSTEM="true"
@@ -19,6 +19,7 @@ echo "
 |--------------------------------|
 | webartifex installation script |
 |--------------------------------|
+ - it's enough to put only this file in the ~ folder
  - adjust the hostname: $HOSTNAME
  - make sure gpg keys are available
 "
@@ -28,6 +29,7 @@ sudo --validate || exit
 cd "$HOME"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating the system\033[0m\n'
+sudo sed -i 's|http://us.|http://de.|' /etc/apt/sources.list.d/system.sources
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
@@ -53,10 +55,6 @@ mv "$HOME/Templates" "$HOME/templates"
 xdg-user-dirs-update --set VIDEOS "$HOME"
 rm -r "$HOME/Videos"
 
-# A lower swappiness results in less hard disk usage by temporary data.
-echo -e '\n\033[36m\033[2m\033[1m\033[7mLowering the swappiness\033[0m\n'
-echo "vm.swappiness = 5" | sudo tee -a /etc/sysctl.conf > /dev/null
-
 echo -e '\n\033[36m\033[2m\033[1m\033[7mDownloading the setup scripts\033[0m\n'
 sudo apt-get install -y git
 git clone https://github.com/webartifex/dot-files.git
@@ -69,7 +67,6 @@ sudo systemctl disable apt-daily-upgrade.timer
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring network settings\033[0m\n'
 sudo hostnamectl set-hostname "$HOSTNAME"
-sudo cp "$DOT_FILES/static/etc_hosts" /etc/hosts
 sudo apt-get install -y macchanger
 sudo cp "$DOT_FILES/static/macchange.conf" /etc/NetworkManager/conf.d/macchange.conf
 # Disable automated network printer search.
@@ -87,13 +84,10 @@ source "$SH_SCRIPTS/setup.d/gnome.sh"
 source "$SH_SCRIPTS/setup.d/gpg.sh"
 source "$SH_SCRIPTS/setup.d/vault_folders.sh"
 source "$SH_SCRIPTS/setup.d/python.sh"
-source "$SH_SCRIPTS/setup.d/dropbox.sh"
 source "$SH_SCRIPTS/setup.d/vpn.sh"
 source "$SH_SCRIPTS/setup.d/chrome.sh"
 source "$SH_SCRIPTS/setup.d/exa.sh"
 source "$SH_SCRIPTS/setup.d/flameshot.sh"
-source "$SH_SCRIPTS/setup.d/microsoft.sh"
-source "$SH_SCRIPTS/setup.d/signal.sh"
 source "$SH_SCRIPTS/setup.d/spotify.sh"
 source "$SH_SCRIPTS/setup.d/teamviewer.sh"
 source "$SH_SCRIPTS/setup.d/thunderbird.sh"

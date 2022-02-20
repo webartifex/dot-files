@@ -55,6 +55,7 @@ pipx install mypy
 pipx install nox
 pipx install pipenv
 pipx install pylint
+pipx install tldr
 pipx install toml-sort
 pipx install tox
 pipx install twine
@@ -78,23 +79,29 @@ poetry config virtualenvs.create true
 poetry config virtualenvs.in-project true
 
 echo -e "\nInstalling pyenv"
+curl https://pyenv.run | bash
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 put-on-path "$HOME/.pyenv/bin"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 # The following should be updated regularly.
 pyenv install 2.7.18
-pyenv install 3.5.10
 pyenv install 3.6.15
 pyenv install 3.7.12
 pyenv install 3.8.12
-pyenv install 3.9.9
-pyenv install 3.10.1
+pyenv install 3.9.10
+pyenv install 3.10.2
 pyenv install pypy3.7-7.3.7
 pyenv install pypy3.8-7.3.7
-pyenv install anaconda3-2021.05
-pyenv local anaconda3-2021.05
+pyenv install anaconda3-2021.11
+pyenv local anaconda3-2021.11
 pyenv rehash
 conda update -y conda
 conda install -y -c anaconda anaconda-navigator
 rm .python-version
+
+echo -e "\nRestoring mackup"
+# Works after installing mackup with pipx.
+cp "$DOT_FILES/.mackup.cfg" "$HOME/.mackup.cfg"
+mackup restore -f

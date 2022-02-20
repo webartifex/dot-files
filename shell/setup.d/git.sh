@@ -1,8 +1,8 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling git\033[0m\n'
 sudo apt-get install -y\
     git\
-    git-doc\
-    git-flow
+    git-flow\
+    git-lfs
 
 
 # Lines below this are only executed during installation.
@@ -10,8 +10,8 @@ sudo apt-get install -y\
 
 
 EMAIL="alexander@webartifex.biz"
-GH_VER="2.3.0"  # -> https://github.com/cli/cli/releases/
-TIG_VER="2.5.4"  # -> https://github.com/jonas/tig/releases/
+GH_VER="2.5.1"  # -> https://github.com/cli/cli/releases/
+TIG_VER="2.5.5"  # -> https://github.com/jonas/tig/releases/
 
 
 echo "
@@ -69,6 +69,7 @@ sudo apt-get install -y ./gh.deb
 rm gh.deb
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling tig\033[0m\n'
+sudo apt-get install libncursesw5-dev
 git clone git@github.com:jonas/tig.git
 cd "$HOME/tig"
 git checkout "tig-${TIG_VER}"

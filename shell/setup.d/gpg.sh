@@ -5,7 +5,7 @@ sudo apt-get install -y\
     gpg-agent\
     gpgsm\
     parcimonie\
-    pinentry-gtk2 pinentry-doc\
+    pinentry-gtk2\
     scdaemon
 
 
@@ -33,3 +33,8 @@ echo -e "\nImported public key:"
 gpg --list-keys
 echo -e "\nImported private key:"
 gpg --list-secret-keys
+
+rm -rf $HOME/gpg
+
+find "$HOME/.gnupg" -type f -exec chmod 600 {} \;
+find "$HOME/.gnupg" -type d -exec chmod 700 {} \;
