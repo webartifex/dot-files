@@ -70,6 +70,8 @@ update-python() {
 
     if command-exists poetry; then
         poetry self update
+        poetry completions bash | sudo tee -a /etc/bash_completion.d/poetry 1>/dev/null
+        poetry completions zsh | sudo tee -a "$ZSH/plugins/poetry/_poetry" 1>/dev/null
     fi
 }
 

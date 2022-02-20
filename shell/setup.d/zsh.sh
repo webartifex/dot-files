@@ -18,3 +18,5 @@ cp "$DOT_FILES/.zshrc" "$HOME/.zshrc"
 zsh -ic "zplug install"
 # Make zsh the default logon shell
 chsh -s $(which zsh)
+# Needed during installation; afterwards, set by zsh itself.
+export ZSH="$REPOS/zsh/robbyrussell/oh-my-zsh"

@@ -21,6 +21,5 @@ export PYTHONDONTWRITEBYTECODE=1
 # $PATH related stuff.
 source "$SH_SCRIPTS/path.sh"
 put-on-path "$HOME/.local/bin"
-put-on-path "$HOME/.poetry/bin"
 put-on-path "$HOME/.pyenv/bin"
 export PATH

@@ -67,6 +67,7 @@ zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "plugins/dotenv", from:oh-my-zsh
 zplug "plugins/git-auto-fetch", from:oh-my-zsh
 zplug "plugins/git-escape-magic", from:oh-my-zsh
+zplug "plugins/poetry", from:oh-my-zsh
 zplug "plugins/pyenv", from:oh-my-zsh
 zplug "plugins/z", from:oh-my-zsh
 
@@ -159,10 +160,7 @@ if command-exists nox; then
     eval "$(register-python-argcomplete nox)"
 fi
 
-if command-exists poetry; then
-    # Causes output during zsh initialization.
-    eval "$(poetry completions zsh)" 1>/dev/null 2>&1
-fi
+# poetry -> $ZSH/plugins/poetry/_poetry
 
 
 # ============

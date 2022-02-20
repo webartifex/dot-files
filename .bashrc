@@ -95,7 +95,7 @@ command-exists pip && eval "$(pip completion --bash)"
 command-exists gh && eval "$(gh completion --shell bash)"
 command-exists invoke && eval "$(invoke --print-completion-script bash)"
 command-exists nox && eval "$(register-python-argcomplete nox)"
-command-exists poetry && eval "$(poetry completions bash)"
+# poetry -> /etc/bash_completion.d/poetry
 
 
 # ======

@@ -70,10 +70,10 @@ cd "$HOME"
 echo -e "\nInstalling poetry"
 # Note: This must be done here "globally." Installing poetry with,
 # for example, pipx results in poetry not integrating well with pyenv.
-curl -sSL https://install.python-poetry.org | python
-put-on-path "$HOME/.poetry/bin"
+curl -sSL https://install.python-poetry.org | python3 -
 poetry -V
-eval "$(poetry completions bash)"
+poetry completions bash | sudo tee -a /etc/bash_completion.d/poetry 1>/dev/null
+poetry completions zsh | sudo tee -a "$ZSH/plugins/poetry/_poetry" 1>/dev/null
 poetry config virtualenvs.create true
 poetry config virtualenvs.in-project true
 
