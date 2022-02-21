@@ -65,6 +65,18 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mDisable update reminder\033[0m\n'
 sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 
+echo "
+|------------------------------------|
+| Is this install on an SSD/NVME ??? |
+|------------------------------------|
+"
+read -p "Respond to proceed ? [y/N] " -n1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo
+    sudo systemctl enable fstrim.timer
+fi
+
 echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring network settings\033[0m\n'
 sudo hostnamectl set-hostname "$HOSTNAME"
 sudo apt-get install -y macchanger
