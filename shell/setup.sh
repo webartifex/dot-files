@@ -73,6 +73,12 @@ sudo cp "$DOT_FILES/static/macchange.conf" /etc/NetworkManager/conf.d/macchange.
 sudo systemctl disable avahi-daemon
 sudo systemctl disable cups-browsed
 
+echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring languages\033[0m\n'
+# This removes, e.g., English (Australia) from the installed languages.
+sudo cp "$DOT_FILES/static/supported_locales" /var/lib/locales/supported.d/en
+sudo dpkg-reconfigure locales
+sudo update-locale
+
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRunning the setup scripts\033[0m\n'
 source "$SH_SCRIPTS/utils.sh"
 source "$SH_SCRIPTS/setup.d/apt.sh"
