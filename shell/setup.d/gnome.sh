@@ -10,9 +10,13 @@ dconf load / < "$DOT_FILES/static/gnome-settings.ini"
 [ -z "$SETUP_SYSTEM" ] && return
 
 
+echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring languages\033[0m\n'
+# This removes, e.g., English (Australia), from the installed languages.
+sudo cp "$DOT_FILES/static/supported_locales" /var/lib/locales/supported.d/en
 sudo locale-gen en_DK.UTF.8
 sudo locale-gen en_US.UTF.8
 sudo update-locale LANG=en_US.UTF-8
+
 
 echo "
 |--------------------|

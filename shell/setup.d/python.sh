@@ -80,7 +80,6 @@ poetry config virtualenvs.in-project true
 
 echo -e "\nInstalling pyenv"
 curl https://pyenv.run | bash
-curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 put-on-path "$HOME/.pyenv/bin"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
@@ -100,8 +99,3 @@ pyenv rehash
 conda update -y conda
 conda install -y -c anaconda anaconda-navigator
 rm .python-version
-
-echo -e "\nRestoring mackup"
-# Works after installing mackup with pipx.
-cp "$DOT_FILES/.mackup.cfg" "$HOME/.mackup.cfg"
-mackup restore -f
