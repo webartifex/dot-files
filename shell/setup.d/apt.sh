@@ -115,11 +115,13 @@ sudo rm /usr/share/applications/texdoctk.desktop 2>/dev/null
 sudo rm /usr/share/applications/vim.desktop 2>/dev/null
 sudo rm /usr/share/applications/yelp.desktop 2>/dev/null
 
+
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling flatpaks\033[0m\n'
 sudo apt-get install -y flatpak
 if [ -n "$SETUP_SYSTEM" ]; then
     sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 fi
+
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mCreating VIM tmp folders\033[0m\n'
 if [ -n "$SETUP_SYSTEM" ]; then
@@ -128,5 +130,30 @@ if [ -n "$SETUP_SYSTEM" ]; then
     mkdir -p "$HOME/.vim/tmp/undo"
 fi
 
+
 # Update the font cache.
 sudo fc-cache -f -v
+
+
+echo "
+|-------------------------------|
+| Configure Audio Devices (1/2) |
+|-------------------------------|
+ - put 'pactl load-module module-device-manager' into startup programs
+ - rename the audio devices (input & output)
+ - optionally, disable unused audio devices
+"
+# Enable device manager, so that `pavucontrol` can rename audio devices.
+# Source: https://askubuntu.com/a/1354231
+pactl load-module module-device-manager
+read -p "Press a key to continue ..." -n1 -r
+echo "
+
+|-------------------------------|
+| Configure Audio Devices (2/2) |
+|-------------------------------|
+ - comment out the line 'load-module module-switch-on-port-available'
+ - this makes HDMI unused and disabled HDMI audio devices not active later on
+"
+read -p "Press a key to continue ..." -n1 -r
+sudo vi /etc/pulse/default.pa
