@@ -31,6 +31,7 @@ sudo apt-get install -y\
     make\
     mdp\
     mlocate\
+    netcat\
     net-tools\
     gparted\
     libgstreamer1.0-0\
@@ -43,6 +44,7 @@ sudo apt-get install -y\
     libpam-tmpdir\
     locales\
     nautilus-admin\
+    nfs-common\
     nmap\
     pandoc\
     pavucontrol\
@@ -71,6 +73,7 @@ sudo apt-get install -y\
     tmux\
     tor\
         torbrowser-launcher\
+    traceroute\
     tree\
     ttf-mscorefonts-installer\
         ttf-anonymous-pro\
@@ -85,7 +88,8 @@ sudo apt-get install -y\
         vim-python-jedi\
         vim-scripts\
     vlc\
-    wget
+    wget\
+    whois
 
 
 # The apps and utilities listed here can either not be removed due
