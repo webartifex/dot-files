@@ -10,6 +10,9 @@ sudo apt-get install -y\
     chrome-gnome-shell\
     gir1.2-gtop-2.0  # needed for system-monitor extension
 
+echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling passff-host to enable Firefox/pass communication\033[0m\n'
+curl -sSL github.com/passff/passff-host/releases/latest/download/install_host_app.sh | bash -s -- firefox
+
 
 # Non-installation specific code is executed after this if statement.
 if [ -n "$SETUP_SYSTEM" ]; then

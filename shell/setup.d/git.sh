@@ -1,3 +1,6 @@
+PASS_LN_VER="1.0.0"  # -> https://github.com/raxod502/pass-ln/releases 
+
+
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling git\033[0m\n'
 sudo apt-get install -y\
     git\
@@ -56,7 +59,12 @@ git clone git@github.com:webartifex/workshop-machine-learning-for-beginners.git
 cd "$HOME"
 git clone git@github.com:webartifex/password-store.git .password-store
 
-echo -e '\n\033[36m\033[2m\033[1m\033[7mRestoring dot files\033[0m\n'
+
+echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling pass-ln extension\033[0m\n'
+wget "https://github.com/raxod502/pass-ln/releases/download/v${PASS_LN_VER}/pass-extension-ln-${PASS_LN_VER}.deb" -O pass-ln.deb
+sudo apt-get install ./pass-ln.deb
+rm pass-ln.deb
+
 rm "$HOME/.bash_history" 2>/dev/null
 rm "$HOME/.bash_logout" 2>/dev/null
 rm "$HOME/.profile" 2>/dev/null
