@@ -1,7 +1,7 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Loxone\033[0m\n'
 
 cd "$HOME"
-wget https://updatefiles.loxone.com/linux/Release/122820220202-amd64.deb -O loxone.deb
+wget https://updatefiles.loxone.com/linux/Release/122920220403-amd64.deb -O loxone.deb
 sudo apt-get install -y ./loxone.deb
 rm loxone.deb
 
