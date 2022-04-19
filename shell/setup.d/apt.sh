@@ -56,6 +56,8 @@ sudo apt-get install -y\
         libpq-dev\
     pwgen\
     ranger\
+    remmina\
+        remmina-plugin-vnc\
     rsync\
     smbclient\
         cifs-utils\
