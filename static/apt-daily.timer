@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily apt download activities
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=1d
+AccuracySec=1h
+RandomizedDelaySec=30min
+
+[Install]
+WantedBy=timers.target

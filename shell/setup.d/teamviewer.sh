@@ -2,8 +2,10 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling TeamViewer\033[0m\n'
 
 cd "$HOME"
 
+# The key must be put into the trusted.gpg.d directory explicitly, not the deprecated trusted.gpg file
+wget -qO- https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/teamviewer.gpg >/dev/null
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-sudo apt-get install -y ./teamviewer_amd64.deb
+sudo apt install -y ./teamviewer_amd64.deb
 rm teamviewer_amd64.deb
 
 

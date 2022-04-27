@@ -1,5 +1,5 @@
 echo -e '\n\033[36m\033[2m\033[1m\033[7mRestoring Gnome settings\033[0m\n'
-sudo apt-get install -y dconf-cli
+sudo apt install -y dconf-cli
 
 # The wallpaper is referenced (twice) in gnome-settings.ini
 sudo cp "$DOT_FILES/static/wallpapers/beach_tropics_sea_sand_palm_trees.jpg" /usr/share/backgrounds/beach_tropics_sea_sand_palm_trees.jpg
@@ -13,7 +13,7 @@ dconf load / < "$DOT_FILES/static/gnome-settings.ini"
 echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring languages\033[0m\n'
 # This removes, e.g., English (Australia), from the installed languages.
 sudo cp "$DOT_FILES/static/supported_locales" /var/lib/locales/supported.d/en
-sudo locale-gen en_DK.UTF.8
+sudo locale-gen en_IE.UTF.8
 sudo locale-gen en_US.UTF.8
 sudo update-locale LANG=en_US.UTF-8
 
@@ -24,7 +24,7 @@ echo "
 |--------------------|
  - open 'Language Support' app
  - remove all languages except English
- - set regional format to 'English (Denmark)'
+ - set regional format to 'English (Ireland)'
    + apply system-wide
 "
 read -p "Press a key to continue ..." -n1 -r

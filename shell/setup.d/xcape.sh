@@ -2,7 +2,7 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling xcape\033[0m\n'
 
 # Source: https://github.com/alols/xcape
 
-sudo apt-get install -y\
+sudo apt install -y\
     git\
     gcc\
     make\

@@ -16,7 +16,7 @@ echo "
  - use credentials below
  - the webdata-password is needed further below
 "
-pass show misc/google.com
+pass show tools/google.com
 echo
 read -p "Press a key to continue ..." -n1 -r
 

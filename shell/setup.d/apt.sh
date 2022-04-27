@@ -2,17 +2,18 @@ if [ -n "$SETUP_SYSTEM" ]; then
     echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving unneeded apt packages\033[0m\n'
     sudo apt purge -y\
         apport
-    sudo apt-get autoremove -y
+    sudo apt autoremove -y
 fi
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling apt packages\033[0m\n'
-sudo apt-get install -y\
+sudo apt install -y\
     bat\
     bleachbit\
     cloc\
     cmake\
     colordiff\
     curl\
+    dconf-editor\
     exuberant-ctags\
     fd-find\
     fzf\
@@ -77,10 +78,17 @@ sudo apt-get install -y\
         torbrowser-launcher\
     traceroute\
     tree\
-    ttf-mscorefonts-installer\
+    ttf-ancient-fonts ttf-ancient-fonts-symbola\
         ttf-anonymous-pro\
-        ttf-ubuntu-font-family\
-        ttf-unifont\
+        ttf-bitstream-vera\
+        ttf-engadget\
+        ttf-tagbanwa\
+        ttf-radisnoir\
+        ttf-sjfonts\
+        ttf-staypuft\
+        ttf-summersby\
+        ttf-xfree86-nonfree ttf-xfree86-nonfree-syriac\
+        fonts-unifont\
     uuid\
     xclip\
     ufw\
@@ -117,7 +125,7 @@ sudo rm /usr/share/applications/yelp.desktop 2>/dev/null
 
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling flatpaks\033[0m\n'
-sudo apt-get install -y flatpak
+sudo apt install -y flatpak
 if [ -n "$SETUP_SYSTEM" ]; then
     sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 fi

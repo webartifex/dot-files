@@ -4,7 +4,7 @@ alias backup-documents-to-storage2-vault='rsync -r -t -p -o -g -x -v --progress 
 alias backup-documents-to-storage3-vault='rsync -r -t -p -o -g -x -v --progress --delete -s --exclude "#recycle" --exclude "#snapshot" --exclude "downloads" --exclude "dropbox" /home/webartifex/documents/ /home/webartifex/vaults/storage3-vault/backups/documents/'
 
 # decrypt/un-decrypt vaults
-alias open-documents-vault='gocryptfs -q -extpass "pass getraenkemarkt/vaults/documents" $HOME/documents/vault/ $HOME/vaults/documents-vault'
+alias open-documents-vault='gocryptfs -q -extpass "pass getraenkemarkt/vaults/documents" $HOME/nextcloud/vault/ $HOME/vaults/documents-vault'
 alias close-documents-vault='fusermount -q -u $HOME/vaults/documents-vault'
 alias open-dropbox-vault='gocryptfs -q -extpass "pass getraenkemarkt/vaults/dropbox" $HOME/documents/dropbox/vault/ $HOME/vaults/dropbox-vault'
 alias close-dropbox-vault='fusermount -q -u $HOME/vaults/dropbox-vault'

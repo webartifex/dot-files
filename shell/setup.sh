@@ -30,12 +30,12 @@ cd "$HOME"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mUpdating the system\033[0m\n'
 sudo sed -i 's|http://us.|http://de.|' /etc/apt/sources.list.d/system.sources
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
-sudo apt-get autoclean -y
-sudo apt-get clean -y
-sudo apt-get autoremove -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
+sudo apt autoclean -y
+sudo apt clean -y
+sudo apt autoremove -y
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mChanging default folders to lower case names\033[0m\n'
 xdg-user-dirs-update --set DESKTOP "$HOME/desktop"
@@ -56,14 +56,14 @@ xdg-user-dirs-update --set VIDEOS "$HOME"
 rm -r "$HOME/Videos"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mDownloading the setup scripts\033[0m\n'
-sudo apt-get install -y git
+sudo apt install -y git
 git clone https://github.com/webartifex/dot-files.git
 export DOT_FILES="$HOME/dot-files"
 export SH_SCRIPTS="$DOT_FILES/shell"
 
-echo -e '\n\033[36m\033[2m\033[1m\033[7mDisable update reminder\033[0m\n'
-sudo systemctl disable apt-daily.timer
-sudo systemctl disable apt-daily-upgrade.timer
+echo -e '\n\033[36m\033[2m\033[1m\033[7mDelaying update reminders\033[0m\n'
+sudo cp "$DOT_FILES/static/apt-daily.timer" /lib/systemd/system/apt-daily.timer
+sudo cp "$DOT_FILES/static/apt-daily-upgrade.timer" /lib/systemd/system/apt-daily-upgrade.timer
 
 echo "
 |------------------------------------|
@@ -79,7 +79,7 @@ fi
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mConfiguring network settings\033[0m\n'
 sudo hostnamectl set-hostname "$HOSTNAME"
-sudo apt-get install -y macchanger
+sudo apt install -y macchanger
 sudo cp "$DOT_FILES/static/macchange.conf" /etc/NetworkManager/conf.d/macchange.conf
 # Disable automated network printer search.
 sudo systemctl disable avahi-daemon
@@ -96,6 +96,7 @@ source "$SH_SCRIPTS/setup.d/gnome.sh"
 source "$SH_SCRIPTS/setup.d/gpg.sh"
 source "$SH_SCRIPTS/setup.d/vault_folders.sh"
 source "$SH_SCRIPTS/setup.d/python.sh"
+source "$SH_SCRIPTS/setup.d/nextcloud.sh"
 source "$SH_SCRIPTS/setup.d/vpn.sh"
 source "$SH_SCRIPTS/setup.d/chrome.sh"
 source "$SH_SCRIPTS/setup.d/exa.sh"
@@ -103,12 +104,19 @@ source "$SH_SCRIPTS/setup.d/flameshot.sh"
 source "$SH_SCRIPTS/setup.d/spotify.sh"
 source "$SH_SCRIPTS/setup.d/teamviewer.sh"
 source "$SH_SCRIPTS/setup.d/thunderbird.sh"
-source "$SH_SCRIPTS/setup.d/loxone.sh"
 source "$SH_SCRIPTS/setup.d/zoom.sh"
 source "$SH_SCRIPTS/setup.d/printer.sh"
 
-echo -e '\n\033[36m\033[2m\033[1m\033[7mRemoving the setup scripts\033[0m\n'
-rm -rf "$HOME/dot-files"
-rm -rf "$HOME/setup.sh"
+echo "
+|------------------------------|
+| Remove the setup scripts ??? |
+|------------------------------|
+"
+read -p "Respond to proceed ? [y/N] " -n1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    rm -rf "$HOME/dot-files"
+    rm -rf "$HOME/setup.sh"
+fi
 
 echo -e "\nInstallation completed. Please restart the machine!"

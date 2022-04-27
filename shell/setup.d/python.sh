@@ -2,14 +2,14 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling Python\033[0m\n'
 
 # testresources as otherwise setuptools emits a weird warning,
 # and venv as otherwise pipx does not work.
-sudo apt-get install -y\
+sudo apt install -y\
     python-is-python3\
     python3-pip\
     python3-testresources\
     python3-venv
 
 # pyenv dependencies.
-sudo apt-get install -y\
+sudo apt install -y\
     build-essential\
     curl\
     git\
@@ -87,12 +87,12 @@ eval "$(pyenv virtualenv-init -)"
 # The following should be updated regularly.
 pyenv install 2.7.18
 pyenv install 3.6.15
-pyenv install 3.7.12
-pyenv install 3.8.12
-pyenv install 3.9.10
-pyenv install 3.10.2
-pyenv install pypy3.7-7.3.7
-pyenv install pypy3.8-7.3.7
+pyenv install 3.7.13
+pyenv install 3.8.13
+pyenv install 3.9.12
+pyenv install 3.10.4
+pyenv install pypy3.7-7.3.9
+pyenv install pypy3.8-7.3.9
 pyenv install anaconda3-2021.11
 pyenv local anaconda3-2021.11
 pyenv rehash
