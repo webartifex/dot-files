@@ -2,7 +2,7 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mRestoring Gnome settings\033[0m\n'
 sudo apt install -y dconf-cli
 
 # The wallpaper is referenced (twice) in gnome-settings.ini
-sudo cp "$DOT_FILES/static/wallpapers/beach_tropics_sea_sand_palm_trees.jpg" /usr/share/backgrounds/beach_tropics_sea_sand_palm_trees.jpg
+sudo cp "$DOT_FILES/static/wallpapers/lake_in_front_of_mountains.jpg" /usr/share/backgrounds/lake_in_front_of_mountains.jpg
 dconf load / < "$DOT_FILES/static/gnome-settings.ini"
 
 
