@@ -45,20 +45,23 @@ echo -e '\n\033[36m\033[2m\033[1m\033[7mCloning repositories\033[0m\n'
 export REPOS="$HOME/repos"
 mkdir "$REPOS"
 cd "$REPOS"
-git clone git@github.com:webartifex/ames-housing.git
-git clone git@github.com:webartifex/collectartworks.git
-git clone git@github.com:webartifex/dot-files.git
-git clone git@github.com:webartifex/intro-to-data-science.git
-git clone git@github.com:webartifex/intro-to-python.git
-git clone git@github.com:webartifex/lalib.git
-git clone git@github.com:webartifex/tidy-data.git
-git clone git@github.com:webartifex/urban-meal-delivery.git
-git clone git@github.com:webartifex/urban-meal-delivery-demand-forecasting.git
-git clone git@github.com:webartifex/webartifex.git
-git clone git@github.com:webartifex/workshop-machine-learning-for-beginners.git
+# Clone repos from gitlab.webartifex.biz
+git clone git@git.webartifex.biz:alexander/ames-housing.git
+git clone git@git.webartifex.biz:alexander/collectartworks.git
+git clone git@git.webartifex.biz:alexander/dot-files.git
+git clone git@git.webartifex.biz:alexander/intro-to-data-science.git
+git clone git@git.webartifex.biz:alexander/intro-to-python.git
+git clone git@git.webartifex.biz:alexander/intro-to-sql.git
+git clone git@git.webartifex.biz:alexander/lalib.git
+git clone git@git.webartifex.biz:alexander/scripts.git
+git clone git@git.webartifex.biz:alexander/tidy-data.git
+git clone git@git.webartifex.biz:alexander/urban-meal-delivery.git
+git clone git@git.webartifex.biz:alexander/urban-meal-delivery-demand-forecasting.git
+# The passwords go into pass's default folder
+git clone git@git.webartifex.biz:alexander/passwords.git ~/.password-store
+# Clone repos from github.com
+git clone git@github.com:webartifex/webartifex.git ./github-profile
 cd "$HOME"
-git clone git@github.com:webartifex/password-store.git .password-store
-
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mInstalling pass-ln extension\033[0m\n'
 wget "https://github.com/raxod502/pass-ln/releases/download/v${PASS_LN_VER}/pass-extension-ln-${PASS_LN_VER}.deb" -O pass-ln.deb
