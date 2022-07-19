@@ -10,8 +10,8 @@ sudo mv "$HOME/exa/bin/exa" /usr/local/bin/exa
 rm exa.zip
 rm -rf exa/
 
-wget "https://github.com/ogham/exa/blob/master/completions/bash/exa"
-sudo mv "$HOME/exa" /etc/bash_completion.d/exa.sh
+wget "https://raw.githubusercontent.com/ogham/exa/master/completions/bash/exa"
+sudo mv "$HOME/exa" /etc/bash_completion.d/exa
 
-wget "https://github.com/ogham/exa/blob/master/completions/zsh/_exa"
-sudo mv "$HOME/_exa" /usr/local/share/zsh/site-functions/exa.zsh
+wget "https://raw.githubusercontent.com/ogham/exa/master/completions/zsh/_exa"
+sudo mv "$HOME/_exa" /usr/local/share/zsh/site-functions/_exa

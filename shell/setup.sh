@@ -38,22 +38,23 @@ sudo apt clean -y
 sudo apt autoremove -y
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mChanging default folders to lower case names\033[0m\n'
+# All folders except `~/desktop` and `~/downloads` will be integrated into `~/nextcloud` later
 xdg-user-dirs-update --set DESKTOP "$HOME/desktop"
+xdg-user-dirs-update --set DOCUMENTS "$HOME/desktop"  # only temporary
+xdg-user-dirs-update --set MUSIC "$HOME/desktop"  # only temporary
+xdg-user-dirs-update --set PICTURES "$HOME/desktop"  # only temporary
+xdg-user-dirs-update --set PUBLICSHARE "$HOME/desktop"  # only temporary
+xdg-user-dirs-update --set TEMPLATES "$HOME/desktop"  # only temporary
+xdg-user-dirs-update --set VIDEOS "$HOME/desktop"  # only temporary
 mv "$HOME/Desktop" "$HOME/desktop"
-xdg-user-dirs-update --set DOCUMENTS "$HOME/documents"
-mv "$HOME/Documents" "$HOME/documents"
+rm -r "$HOME/Documents"
+rm -r "$HOME/Music"
+rm -r "$HOME/Pictures"
+rm -r "$HOME/Public"
+rm -r "$HOME/Templates"
+rm -r "$HOME/Videos"
 xdg-user-dirs-update --set DOWNLOAD "$HOME/downloads"
 mv "$HOME/Downloads" "$HOME/downloads"
-xdg-user-dirs-update --set MUSIC "$HOME"
-rm -r "$HOME/Music"
-xdg-user-dirs-update --set PICTURES "$HOME"
-rm -r "$HOME/Pictures"
-xdg-user-dirs-update --set PUBLICSHARE "$HOME/public"
-mv "$HOME/Public" "$HOME/public"
-xdg-user-dirs-update --set TEMPLATES "$HOME/templates"
-mv "$HOME/Templates" "$HOME/templates"
-xdg-user-dirs-update --set VIDEOS "$HOME"
-rm -r "$HOME/Videos"
 
 echo -e '\n\033[36m\033[2m\033[1m\033[7mDownloading the setup scripts\033[0m\n'
 sudo apt install -y git
