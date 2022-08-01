@@ -30,6 +30,14 @@ xclip -sel clip < "$HOME/.ssh/id_ed25519.pub"
 firefox --new-tab "https://github.com/settings/keys" >/dev/null 2>/dev/null &
 echo
 
+chmod 700 "$HOME/.ssh"
+chmod 600 "$HOME/.ssh/config"
+chmod 600 "$HOME/.ssh/id_ed25519"
+chmod 644 "$HOME/.ssh/id_ed25519.pub"
+chmod 644 "$HOME/.ssh/authorized_keys"
+chmod 644 "$HOME/.ssh/known_hosts"
+
+
 echo "
 |----------------------|
 | Configure git/GitHub |
